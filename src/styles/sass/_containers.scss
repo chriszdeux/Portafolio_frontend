@@ -1,0 +1,10 @@
+@mixin containers($width) {
+  width: $width;
+  margin: 0 auto;
+}
+.c10 {
+  @include containers(100%);
+}
+.c9 {
+  @include containers(90%);
+}

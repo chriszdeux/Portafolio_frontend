@@ -1,0 +1,12 @@
+@mixin icons($color) {
+  font-size: $extra-large-font-size;
+  color: $color;
+}
+
+.menu--icon {
+  @include icons($main-color)
+}
+
+.close--icon {
+  @include icons($main-color);
+}

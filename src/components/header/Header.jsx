@@ -1,24 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { RiMenu3Fill as MenuIcon } from "react-icons/ri";
+import { GrClose as CloseIcon } from 'react-icons/gr';
 
 export const Header = () => {
+  const [open, setOpen] = useState(false)
   return (
     <>
-      <header className="header">
-        <h2>Portafolio</h2>
-        <h2>menu</h2>
+      <header className="header c10">
+        <div className="c9">
+          <h2 className="title">Portafolio</h2>
+          {
+            !open
+              ?  <MenuIcon 
+                  className="menu--icon"
+                  onClick={() => setOpen(!open)}
+                />
+              :  <CloseIcon 
+                  className="close--icon"
+                  onClick={() => setOpen(!open)}
+                />
+          }
+        </div>
       </header>
-      <nav>
-        <ul>
-          <li>main</li>
-          <li>portafolio</li>
-          <li>who I am?</li>
-          <li>what I know?</li>
-          <li>what I like?</li>
-          <li>contact</li>
-        </ul>
-      </nav>
+      {
+        open && 
+        <div className="modal">
+          <div className="layout" onClick={ () => setOpen(false) }>
+          </div>
+          <div className="navbar__modal">
+            <nav className="navbar">
+              <ul className="navbar__list">
+                <li className="navbar--item">main</li>
+                <li className="navbar--item">portafolio</li>
+                <li className="navbar--item">who I am?</li>
+                <li className="navbar--item">what I know?</li>
+                <li className="navbar--item">what I like?</li>
+                <li className="navbar--item">contact</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      }
 
-      <section className="desk__menu">
+      {/* <section className="desk__menu">
           <div>
             <figure>
               <img src="" alt="" />
@@ -33,7 +57,7 @@ export const Header = () => {
               </ul>
             </nav>
           </div>
-        </section>
+        </section> */}
     </>
   )
 }

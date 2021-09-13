@@ -1,0 +1,13 @@
+.header {
+  height: 5rem;
+  border-bottom: 1px solid $gray-color;
+  .close--icon {
+    z-index: 1;
+  }
+  .c9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+}

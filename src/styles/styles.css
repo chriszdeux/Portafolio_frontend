@@ -1,1 +1,100 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.c10 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.c9 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.layout {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ececec;
+  opacity: 0.7;
+}
+
+.navbar__modal {
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+  background-color: #999999;
+}
+
+.navbar--item {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ececec;
+}
+
+.header {
+  height: 5rem;
+  border-bottom: 1px solid #A0A0A0;
+}
+
+.header .close--icon {
+  z-index: 1;
+}
+
+.header .c9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.menu--icon {
+  font-size: 2.2rem;
+  color: #575757;
+}
+
+.close--icon {
+  font-size: 2.2rem;
+  color: #575757;
+}
+/*# sourceMappingURL=styles.css.map */
