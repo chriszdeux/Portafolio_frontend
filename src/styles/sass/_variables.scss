@@ -2,6 +2,11 @@ $gray-color: #A0A0A0;
 $main-color: #313131;
 $secondary-color: #292929;
 $overlay-color: #ececec;
+$backgorund-color: #3b3b3b;
+$shadow-color: #00000008;
+$shadow-color-active: #2f2f2f;
+$text-color: #ececec;
+$border-color: #00000026;
 
 $projects-color: #FFC5C5;
 $projects-color-active: #ff9595;
@@ -39,3 +44,6 @@ $jumbo-font-size: 3rem;
 $light-weight: 300;
 $regular-weight: 400;
 $heavy-weight: 500;
+
+$box-shadow: 0 0 5px 5px $shadow-color;
+$box-shadow-active: 0 0 5px 5px $shadow-color-active;

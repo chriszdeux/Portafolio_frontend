@@ -26,14 +26,14 @@ export const Header = () => {
           <div className="layout" onClick={ () => setOpen(false) }>
           </div>
           <div className="navbar__modal">
-            <nav className="navbar">
+            <nav className="navbar c9">
               <ul className="navbar__list">
-                <li className="navbar--item">main</li>
-                <li className="navbar--item">portafolio</li>
-                <li className="navbar--item">who I am?</li>
-                <li className="navbar--item">what I know?</li>
-                <li className="navbar--item">what I like?</li>
-                <li className="navbar--item">contact</li>
+                <li className="navbar--item c10">main</li>
+                <li className="navbar--item c10">portafolio</li>
+                <li className="navbar--item c10">who I am?</li>
+                <li className="navbar--item c10">Skills</li>
+                <li className="navbar--item c10">what I like?</li>
+                <li className="navbar--item c10">contact</li>
               </ul>
             </nav>
           </div>

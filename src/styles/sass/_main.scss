@@ -5,15 +5,21 @@
   align-items: center;
   grid-area: $area;
   position: relative;
-  border: 2px solid $color;
+  border: 2px solid $border-color;
   text-align: center;
   transition: .3s ease;
+  background-color: $backgorund-color;
   color: $secondary-color;
+  box-shadow: $box-shadow;
+  border-radius:10px;
 }
 @mixin section-active($color) {
-  background-color: $color;
+  // background-color: $color;
+  // border: 1px solid $react-color;
   color: $main-color;
   color: $overlay-color;
+  box-shadow: $box-shadow-active;
+  cursor: pointer;
 }
 @mixin info-section($background) {
   background-color: $background;
@@ -21,80 +27,91 @@
   color: $secondary-color;
 }
 
+.hero__section {
+  @include main-section(hero, $projects-color);
+  // .info__section {
+  //   @include info-section($projects-color);
+  // }
+}
+.hero__section:hover {
+  @include section-active($projects-color-active)
+}
 .projects__section {
   @include main-section(projects, $projects-color);
-  .info__section {
-    @include info-section($projects-color);
-  }
+  // .info__section {
+  //   @include info-section($projects-color);
+  // }
 }
 
 .projects__section:hover {
   @include section-active($projects-color-active)
 }
 
-.projects__section:hover .info__section {
-  display: flex;
-}
+// .projects__section:hover .info__section {
+//   display: flex;
+// }
 
 .about__section {
   @include main-section(about, $about-me-color);
-  .info__section {
-    @include info-section($about-me-color);
-  }
+  // .info__section {
+  //   @include info-section($about-me-color);
+  // }
 }
 .about__section:hover {
   @include section-active($about-me-color-active)
 }
 
-.about__section:hover .info__section {
-  display: flex;
-}
+// .about__section:hover .info__section {
+//   display: flex;
+// }
 
 .knowledge__section {
   @include main-section(knowledge, $knowledge-color);
-  .info__section {
-    @include info-section($knowledge-color);
-  }
+  // .info__section {
+  //   @include info-section($knowledge-color);
+  // }
 }
 .knowledge__section:hover {
   @include section-active($knowledge-color-active)
 }
 
-.knowledge__section:hover .info__section {
-  display: flex;
-}
+// .knowledge__section:hover .info__section {
+//   display: flex;
+// }
 
 .i__like__section {
   @include main-section(like, $like-to-do-color);
-  .info__section {
-    @include info-section($like-to-do-color);
-  }
+  // .info__section {
+  //   @include info-section($like-to-do-color);
+  // }
 }
 .i__like__section:hover {
   @include section-active($like-to-do-color-active)
 }
 
-.i__like__section:hover .info__section {
-  display: flex;
-}
+// .i__like__section:hover .info__section {
+//   display: flex;
+// }
 
 .contact__section {
   @include main-section(contact, $contact-color);
-  .info__section {
-    @include info-section($contact-color);
-  }
+  // .info__section {
+  //   @include info-section($contact-color);
+  // }
 }
 .contact__section:hover {
   @include section-active($contact-color-active)
 }
-.contact__section:hover .info__section {
-  display: flex;
-}
+// .contact__section:hover .info__section {
+//   display: flex;
+// }
 
 .main {
   display: grid;
-  height: 90vh;
+  height: 100vh;
   grid-template-areas: 
+  'hero hero'
+  'hero hero'
   'projects projects'
   'about knowledge'
   'about like'
@@ -103,14 +120,16 @@
   gap: 1rem;
   margin-top: 6rem;
   text-align: center;
+  // background-color: $overlay-color;
 }
 
 .titles {
-  font-size: $jumbo-font-size;
+  font-size: $large-font-size;
+  color: $text-color;
 }
 
 .info__section {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   position: absolute;
@@ -122,6 +141,7 @@
 .info__list {
   display: flex;
   .info--item {
+    // font-size: $large-font-size;
     margin-right: 1rem;
     font-weight: $light-weight;
   }
