@@ -5,7 +5,15 @@
 }
 .modal {
   @include modal-mixin(100%, 100vh, fixed);
-  top: 0
+  top: 0;
+  z-index: 1;
+  .close--icon {
+    position: fixed;
+    top: 2%;
+    right: 5%;
+    color: $overlay-color;
+    z-index: 1;
+  }
 }
 .layout {
   // display: none;
@@ -24,6 +32,11 @@
   align-items: center;
   right: 0;
   background-color: $secondary-color;
+  // .close--icon {
+  //   position: fixed;
+  //   top: 2%;
+  //   right: 5%
+  // }
 }
 
 .navbar--item {

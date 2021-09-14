@@ -4,9 +4,9 @@
 }
 
 .menu--icon {
-  @include icons($main-color)
+  @include icons($overlay-color)
 }
 
 .close--icon {
-  @include icons($main-color);
+  @include icons($overlay-color);
 }

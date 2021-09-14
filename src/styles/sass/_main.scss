@@ -1,0 +1,133 @@
+@mixin main-section($area, $color) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: $area;
+  position: relative;
+  border: 2px solid $color;
+  text-align: center;
+  transition: .3s ease;
+  color: $secondary-color;
+}
+@mixin section-active($color) {
+  background-color: $color;
+  color: $main-color;
+  color: $overlay-color;
+}
+@mixin info-section($background) {
+  background-color: $background;
+  display: none;
+  color: $secondary-color;
+}
+
+.projects__section {
+  @include main-section(projects, $projects-color);
+  .info__section {
+    @include info-section($projects-color);
+  }
+}
+
+.projects__section:hover {
+  @include section-active($projects-color-active)
+}
+
+.projects__section:hover .info__section {
+  display: flex;
+}
+
+.about__section {
+  @include main-section(about, $about-me-color);
+  .info__section {
+    @include info-section($about-me-color);
+  }
+}
+.about__section:hover {
+  @include section-active($about-me-color-active)
+}
+
+.about__section:hover .info__section {
+  display: flex;
+}
+
+.knowledge__section {
+  @include main-section(knowledge, $knowledge-color);
+  .info__section {
+    @include info-section($knowledge-color);
+  }
+}
+.knowledge__section:hover {
+  @include section-active($knowledge-color-active)
+}
+
+.knowledge__section:hover .info__section {
+  display: flex;
+}
+
+.i__like__section {
+  @include main-section(like, $like-to-do-color);
+  .info__section {
+    @include info-section($like-to-do-color);
+  }
+}
+.i__like__section:hover {
+  @include section-active($like-to-do-color-active)
+}
+
+.i__like__section:hover .info__section {
+  display: flex;
+}
+
+.contact__section {
+  @include main-section(contact, $contact-color);
+  .info__section {
+    @include info-section($contact-color);
+  }
+}
+.contact__section:hover {
+  @include section-active($contact-color-active)
+}
+.contact__section:hover .info__section {
+  display: flex;
+}
+
+.main {
+  display: grid;
+  height: 90vh;
+  grid-template-areas: 
+  'projects projects'
+  'about knowledge'
+  'about like'
+  'contact like'
+  ;
+  gap: 1rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.titles {
+  font-size: $jumbo-font-size;
+}
+
+.info__section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: $projects-color;
+  height: 5rem;
+}
+
+.info__list {
+  display: flex;
+  .info--item {
+    margin-right: 1rem;
+    font-weight: $light-weight;
+  }
+  // justify-content: space-between;
+}
+
+.more {
+  margin-right: 1rem;
+}

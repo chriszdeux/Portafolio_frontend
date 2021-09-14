@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Fill as MenuIcon } from "react-icons/ri";
-import { GrClose as CloseIcon } from 'react-icons/gr';
+import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
 
 export const Header = () => {
   const [open, setOpen] = useState(false)
@@ -9,22 +9,20 @@ export const Header = () => {
       <header className="header c10">
         <div className="c9">
           <h2 className="title">Portafolio</h2>
-          {
-            !open
-              ?  <MenuIcon 
-                  className="menu--icon"
-                  onClick={() => setOpen(!open)}
-                />
-              :  <CloseIcon 
-                  className="close--icon"
-                  onClick={() => setOpen(!open)}
-                />
-          }
+          <MenuIcon 
+            className="menu--icon"
+            onClick={() => setOpen(!open)}
+          />
         </div>
       </header>
       {
         open && 
         <div className="modal">
+          
+          <CloseIcon 
+            className="close--icon"
+            onClick={() => setOpen(!open)}
+          />
           <div className="layout" onClick={ () => setOpen(false) }>
           </div>
           <div className="navbar__modal">
