@@ -2,6 +2,12 @@
   width: $width;
   height: $height;
   position: $position;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  background-color: $secondary-color;
+  box-shadow: $box-shadow;
 }
 .modal {
   @include modal-mixin(100%, 100vh, fixed);
@@ -20,37 +26,74 @@
   @include modal-mixin(100%,100vh , absolute);
   top: 0;
   right: 0;
-  background-color: $secondary-color;
-  opacity: 0.7;
+  background-color: $border-color;
+  opacity: 0.5;
   // filter: blur(1rem)
 }
 
 .navbar__modal {
   @include modal-mixin(70%, 100vh, absolute);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 0;
-  background-color: $secondary-color;
-  box-shadow: $box-shadow;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // right: 0;
+  // background-color: $secondary-color;
+  // box-shadow: $box-shadow;
   // .close--icon {
-  //   position: fixed;
-  //   top: 2%;
-  //   right: 5%
-  // }
-}
+    //   position: fixed;
+    //   top: 2%;
+    //   right: 5%
+    // }
+  }
+  
+  .navbar--item {
+    text-transform: capitalize;
+    text-align: end;
+    font-size: $jumbo-font-size;
+    margin-bottom: 2rem;
+    color: $overlay-color;
+    transition: .6s ease;
+  }
+  
+  .navbar--item:hover {
+    transform: translateX(-5%);
+    font-weight: $heavy-weight;
+    cursor: pointer;
+  }
+  
+  .modal__project {
+    @include modal-mixin(90%, 95vh, absolute);
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $backgorund-color;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    padding: 1rem;
 
-.navbar--item {
-  text-transform: capitalize;
-  text-align: end;
-  font-size: $jumbo-font-size;
-  margin-bottom: 2rem;
-  color: $overlay-color;
-  transition: .6s ease;
-}
+    .technologies {
+      display: flex;
 
-.navbar--item:hover {
-  transform: translateX(-5%);
-  font-weight: $heavy-weight;
-  cursor: pointer;
-}
+      .react--icon {
+
+  filter: drop-shadow(2px 4px 8px #fff)
+      }
+      .technologies--item {
+        margin-right: 1rem;
+      }
+    }
+    .titles {
+      align-self: center;
+    }
+    .links {
+      display: flex;
+      justify-content: flex-end;
+
+      .github--icon {
+        margin: 0 1rem;
+      }
+      .live--icon {
+        margin: 0 1rem;
+      }
+    }
+  }

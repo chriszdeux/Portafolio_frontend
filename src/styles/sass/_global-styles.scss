@@ -1,3 +1,79 @@
 body {
   background-color: $backgorund-color;
+  color: $text-color;
+}
+
+.active__navigation {
+  color: $react-color;
+}
+
+@mixin boxes($width, $height,$animation, $border, $top, $right, $bottom, $left) {
+  width: $width;
+  height: $height;
+  position: absolute;
+  animation-name: $animation;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  border: 4px solid $border;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  transform: scale(20);
+}
+
+.paragraph {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 6px;
+  line-height: 2rem;
+}
+.animation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  
+  .box1 {
+    @include boxes(50%,80rem , box_1, $react-color, 10%, 15%, 30%, 15%);
+    // transform: scale(5);
+  }
+  .box2 {
+    @include boxes(50%,80rem , box_2, $html-color, 35%, 10%, 5%, 20%)
+  }
+  .box3 {
+    transform: scale(5);
+    @include boxes(20%,50rem , box_3, $js-color, 20%, 5%, 50%, 5%)
+  }
+}
+
+@keyframes box_1 {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: translateY(30%);
+  }
+}
+@keyframes box_2 {
+  0% {
+    transform: translateX(15%) rotate(45deg) translateY(50%);
+  }
+
+  100% {
+    transform: translateY(30%);
+  }
+}
+
+@keyframes box_3 {
+  0% {
+    transform: translateX(15%) rotate(45deg) translateY(50%);
+  }
+
+  100% {
+    transform: translateY(30%);
+  }
 }

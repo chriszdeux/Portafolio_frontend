@@ -10,3 +10,24 @@
 .close--icon {
   @include icons($overlay-color);
 }
+.folder--icon {
+  @include icons($overlay-color);
+}
+.link--icon {
+  @include icons($overlay-color);
+}
+.live--icon {
+  @include icons($overlay-color);
+}
+.github--icon {
+  @include icons($github-color);
+}
+.react--icon {
+  @include icons($react-color);
+}
+.sass--icon {
+  @include icons($sass-color);
+}
+.html--icon {
+  @include icons($html-color);
+}

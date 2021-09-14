@@ -1,14 +1,48 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { RiMenu3Fill as MenuIcon } from "react-icons/ri";
 import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
 
+const menuList = [
+  {
+    section: 'Main',
+    class_name: 'projects__section',
+    route: '/'
+  },
+  {
+    section: 'My Projects',
+    class_name: 'projects__section',
+    route: '/project-page'
+  },
+  {
+    section: 'About Me',
+    class_name: 'about__section',
+    route: '/about-me-page'
+  },
+  {
+    section: 'My skills',
+    class_name: 'knowledge__section',
+    route: '/skills-page'
+  },
+  {
+    section: 'Hobbies',
+    class_name: 'i__like__section',
+    route: '/hobbies-page'
+  },
+  {
+    section: 'Contact',
+    class_name: 'contact__section',
+    route: '/contact-page'
+  },
+]
 export const Header = () => {
+
   const [open, setOpen] = useState(false)
   return (
     <>
       <header className="header c10">
         <div className="c9">
-          <h2 className="title">Portafolio</h2>
+          <h2 className="sub-title">Portafolio</h2>
           <MenuIcon 
             className="menu--icon"
             onClick={() => setOpen(!open)}
@@ -28,12 +62,13 @@ export const Header = () => {
           <div className="navbar__modal">
             <nav className="navbar c9">
               <ul className="navbar__list">
-                <li className="navbar--item c10">main</li>
-                <li className="navbar--item c10">portafolio</li>
-                <li className="navbar--item c10">who I am?</li>
-                <li className="navbar--item c10">Skills</li>
-                <li className="navbar--item c10">what I like?</li>
-                <li className="navbar--item c10">contact</li>
+                {
+                  menuList.map(({section, route}) => (
+                    <NavLink exact to={ route } activeClassName="active__navigation">
+                      <li className="navbar--item c10">{ section }</li>
+                    </NavLink>
+                  ))
+                }
               </ul>
             </nav>
           </div>
