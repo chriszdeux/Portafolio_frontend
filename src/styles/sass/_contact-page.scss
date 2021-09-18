@@ -1,0 +1,121 @@
+@mixin contact-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+  border: 1px solid white;
+  margin: 1rem;
+}
+
+@mixin input-fields($area) {
+  width: 100%;
+  grid-area: $area;
+  height: 3rem;
+  text-align: center;
+  padding: 1rem;
+  border: none; 
+  color: $main-color;
+  outline: none;
+  // align-self: center;
+}
+
+@mixin contact-close {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: $overlay-color;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.contact__method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.social {
+  height: auto;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  // overflow: hidden;
+  justify-content: center;
+  height: auto;
+
+  .social--item {
+    width: 25%;
+    height: 3rem;
+    flex-shrink: 0;
+    font-size: $large-font-size
+  }
+}
+
+.contact__email {
+  // @include
+  @include contact-method();
+  position: relative;
+  .close--icon {
+    @include contact-close();
+    // font-size: $large-font-size
+  }
+}
+
+.contact__social {
+  // @include
+  position: relative;
+  @include contact-method();
+  .close--icon {
+    @include contact-close();
+    // font-size: $large-font-size
+  }
+}
+
+.name--field {
+  @include input-fields(name);
+}
+.email--field {
+  @include input-fields(email);
+}
+.phone--field {
+  @include input-fields(phone);
+}
+.subject--field {
+  @include input-fields(subject);
+}
+.message--field {
+  @include input-fields(message);
+  height: 10rem;
+  resize: none;
+}
+// .--field {
+//   @include input-fields();
+// }
+
+.contact__form {
+  display: grid;
+  position: relative;
+  // height: 10rem;
+  grid-template-areas:
+  'name name'
+  'email phone'
+  'subject subject'
+  'message message'
+  // 'message ...'
+  ;
+  // overflow: hidden;
+  gap: 1rem;
+  margin-top: 5rem;
+  // border: 1px solid red;
+}

@@ -2,11 +2,14 @@ $gray-color: #A0A0A0;
 $main-color: #313131;
 $secondary-color: #29292969;
 $overlay-color: #ececec;
-$backgorund-color: #3b3b3b;
+$backgorund-color: #212121;
+$second-background-color: #252525;
+// $backgorund-color: #3b3b3b;
 $shadow-color: #00000008;
 $shadow-color-active: #2f2f2f;
 $text-color: #ececec;
-$border-color: #00000026;
+$border-color: #474646d3;
+$btn-primary-color: #2d4049;
 
 $projects-color: #FFC5C5;
 $projects-color-active: #ff9595;
@@ -32,6 +35,7 @@ $npm-color: #C13534b2;
 $npm-color-active: #C13534;
 $react-color: #58DAFBb2;
 $react-color-active: #58DAFB;
+$github-color: #272727;
 
 $other-color: #424242;
 
@@ -41,9 +45,14 @@ $regular-font-size: 1.8rem;
 $large-font-size: 2rem;
 $extra-large-font-size: 2.2rem;
 $jumbo-font-size: 3rem;
+$extra-jumbo-font-size: 8rem;
 $light-weight: 300;
 $regular-weight: 400;
 $heavy-weight: 500;
 
 $box-shadow: 0 0 5px 5px $shadow-color;
 $box-shadow-active: 0 0 5px 5px $shadow-color-active;
+
+$small-icon: 3rem;
+$regular-icon: 5rem;
+$large-icon: 7rem;

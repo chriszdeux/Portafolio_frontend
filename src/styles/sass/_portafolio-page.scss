@@ -8,8 +8,13 @@
   align-items: center;
   height: 5rem;
   margin-top: 3rem;
+  background-color: $second-background-color;
   box-shadow: $box-shadow;
   transition: .4s ease-in;
+}
+
+.projects:hover .project__options {
+  display: flex;
 }
 .project__options {
   display: none;
@@ -31,4 +36,43 @@
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   text-align: center;
+}
+
+.project__image {
+  background-color: $main-color;
+  height: 20rem;
+  margin: 1rem 0;
+
+  .project--image {
+    width: 100%;
+    height: inherit;
+  }
+}
+
+.technologies {
+  display: flex;
+  z-index: 1;
+  align-self: flex-end;
+
+  .technologies--item {
+    margin-right: 1rem;
+  }
+}
+.titles {
+  // align-self: center;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+
+  .github--icon {
+    margin: 0 1rem;
+  }
+  .live--icon {
+    margin: 0 1rem;
+  }
+}
+
+.project__gallery {
+  margin: 5rem 0;
 }

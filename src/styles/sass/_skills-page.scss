@@ -1,0 +1,37 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.skills__title {
+  margin: 5rem 0;
+  font-size: $jumbo-font-size;
+}
+
+.skill__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  background-color: $second-background-color;
+  box-shadow: $box-shadow;
+}
+
+.technology--name {
+  margin: 1rem 0;
+  font-size: $large-font-size;
+  // color: $react-color;
+}
+
+.skills__modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.close--skills {
+  top: 10%;
+}

@@ -43,20 +43,26 @@ export const Header = () => {
       <header className="header c10">
         <div className="c9">
           <h2 className="sub-title">Portafolio</h2>
-          <MenuIcon 
-            className="menu--icon"
-            onClick={() => setOpen(!open)}
-          />
+          {
+            !open 
+            ? 
+            <MenuIcon 
+              className="menu--icon"
+              onClick={() => setOpen(!open)}
+            />
+            :
+            <CloseIcon 
+              className="close--icon"
+              onClick={() => setOpen(!open)}
+            />
+            
+          }
         </div>
       </header>
       {
         open && 
         <div className="modal">
           
-          <CloseIcon 
-            className="close--icon"
-            onClick={() => setOpen(!open)}
-          />
           <div className="layout" onClick={ () => setOpen(false) }>
           </div>
           <div className="navbar__modal">

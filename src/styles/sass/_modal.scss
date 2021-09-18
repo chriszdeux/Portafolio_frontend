@@ -1,32 +1,51 @@
 @mixin modal-mixin($width, $height, $position) {
-  width: $width;
-  height: $height;
-  position: $position;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: $width;
+  height: $height;
+  position: $position;
   right: 0;
   background-color: $secondary-color;
   box-shadow: $box-shadow;
 }
+
+
+@mixin modal-responsive {
+    width: 90%;
+    height: 95vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: $backgorund-color;
+    top: 50%;
+    right: 50%;
+    padding: 1rem;
+    z-index: 1;
+}
+
+
+
 .modal {
   @include modal-mixin(100%, 100vh, fixed);
+  overflow: scroll;
   top: 0;
   z-index: 1;
+  // overflow-y: scroll;
   .close--icon {
     position: fixed;
-    top: 2%;
-    right: 5%;
+    top: 3%;
+    right: 6%;
     color: $overlay-color;
-    z-index: 1;
+    z-index: 2;
   }
 }
 .layout {
   // display: none;
-  @include modal-mixin(100%,100vh , absolute);
+  @include modal-mixin(100%,100vh , fixed);
   top: 0;
   right: 0;
-  background-color: $border-color;
+  background-color: $second-background-color;
   opacity: 0.5;
   // filter: blur(1rem)
 }
@@ -62,38 +81,13 @@
   }
   
   .modal__project {
-    @include modal-mixin(90%, 95vh, absolute);
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: $backgorund-color;
-    top: 50%;
-    right: 50%;
-    transform: translateX(50%) translateY(-50%);
-    padding: 1rem;
-
-    .technologies {
-      display: flex;
-
-      .react--icon {
-
-  filter: drop-shadow(2px 4px 8px #fff)
-      }
-      .technologies--item {
-        margin-right: 1rem;
-      }
-    }
-    .titles {
-      align-self: center;
-    }
-    .links {
-      display: flex;
-      justify-content: flex-end;
-
-      .github--icon {
-        margin: 0 1rem;
-      }
-      .live--icon {
-        margin: 0 1rem;
-      }
-    }
+    @include modal-responsive();
+    
+  }
+  
+  .modal__hobbies {
+    @include modal-responsive();
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

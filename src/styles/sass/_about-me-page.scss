@@ -1,0 +1,49 @@
+.about__me__page {
+  // margin-top: 5rem;
+}
+
+.about__me {
+  display: flex;
+  height: 20rem;
+  position: relative;
+  box-shadow: $box-shadow;
+  margin-bottom: 2rem;
+  .about__me__background {
+    // border: 1px solid red;
+    position: absolute;
+    height: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    .about--me--background {
+      width: 100%;
+      object-fit: cover;
+      height: inherit;
+    }
+}
+
+}
+
+.about__me__info {
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+}
+
+.profile__picture {
+  width: 30%;
+  height: 10rem;
+  margin-right: 2rem;
+
+  .profile--picture {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+}
+
+.about__me__more {
+  display: flex;
+  justify-content: flex-end;
+}

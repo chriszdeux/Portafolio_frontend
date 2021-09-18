@@ -1,0 +1,45 @@
+.about__me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40rem;
+  position: relative;
+}
+
+.about__me .about__me__background {
+  border: 1px solid red;
+  position: absolute;
+  height: inherit;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about__me .about__me__background .about--me--background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: inherit;
+}
+
+.about__me__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__picture {
+  width: 30%;
+  height: 40rem;
+  margin-right: 2rem;
+}
+
+.profile__picture .profile--picture {
+  width: 100%;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=about-me-page.css.map */

@@ -3,12 +3,19 @@
   color: $color;
 }
 
+@mixin slider-controls {
+  font-size: $jumbo-font-size;
+  color: $overlay-color;
+  opacity: 0.4;
+}
+
 .menu--icon {
   @include icons($overlay-color)
 }
 
 .close--icon {
   @include icons($overlay-color);
+  z-index: 2;
 }
 .folder--icon {
   @include icons($overlay-color);
@@ -20,7 +27,7 @@
   @include icons($overlay-color);
 }
 .github--icon {
-  @include icons($github-color);
+  @include icons($overlay-color);
 }
 .react--icon {
   @include icons($react-color);
@@ -30,4 +37,23 @@
 }
 .html--icon {
   @include icons($html-color);
+}
+
+.js--icon {
+  @include icons($js-color);
+}
+
+.left--icon {
+  @include slider-controls();
+}
+
+.right--icon {
+  @include slider-controls();
+}
+
+.lg--icon {
+  font-size: $regular-icon;
+}
+.jb--icon {
+  font-size: $large-icon;
 }

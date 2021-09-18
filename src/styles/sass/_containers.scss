@@ -1,6 +1,8 @@
 @mixin containers($width) {
   width: $width;
+  height: auto;
   margin: 0 auto;
+  // overflow: scroll
 }
 .c10 {
   @include containers(100%);
@@ -13,6 +15,9 @@
 }
 .c7 {
   @include containers(70%);
+}
+.c5 {
+  @include containers(50%);
 }
 .c2 {
   @include containers(20%);

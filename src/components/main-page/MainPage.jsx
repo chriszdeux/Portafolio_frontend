@@ -4,32 +4,32 @@ import { NavLink } from 'react-router-dom'
 export const gridTemplate = [
   {
     section: 'Hero section',
-    class_name: 'hero__section',
+    area: 'hero__area',
     route: '/'
   },
   {
     section: 'My Projects',
-    class_name: 'projects__section',
+    area: 'projects__area',
     route: '/project-page'
   },
   {
     section: 'About Me',
-    class_name: 'about__section',
+    area: 'about__area',
     route: '/about-me-page'
   },
   {
     section: 'My skills',
-    class_name: 'knowledge__section',
+    area: 'skills__area',
     route: '/skills-page'
   },
   {
     section: 'Hobbies',
-    class_name: 'i__like__section',
+    area: 'hobbies__area',
     route: '/hobbies-page'
   },
   {
     section: 'Contact',
-    class_name: 'contact__section',
+    area: 'contact__area',
     route: '/contact-page'
   },
 ]
@@ -38,8 +38,8 @@ export const MainPage = () => {
   return (
     <main className="main c9">
       {
-        gridTemplate.map(({section, class_name, route} ) => (
-          <div className={`${class_name}`}>
+        gridTemplate.map(({section, area, route} ) => (
+          <div className={`main__sections ${area}`}>
             <NavLink exact to={ route }>
             <h2 className="titles">{ section }</h2>
             </NavLink>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "hobbies-page.scss"
+    ],
+    "names": [],
+    "file": "hobbies-page.css"
+}
