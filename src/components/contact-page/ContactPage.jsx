@@ -18,31 +18,38 @@ export const ContactPage = () => {
   return (
     <section className="contact c10">
           <div className="contact__method c9">
-            <div className="contact__email c10">
-              {
-                form 
-                ? 
-                  <>
-                    <CloseIcon className="close--icon" onClick={ handleForm }/>
+            {
+              !social &&
+                <div className="contact__email c10">
+                  {
+                    form 
+                    ? 
+                      <>
+                        <CloseIcon className="close--icon" onClick={ handleForm }/>
 
-                    <ContactForm handleForm={ handleForm }/>
-                  </>
-                :
-                  <h3 className="titles" onClick={ handleForm }>email</h3>
-              }
-            </div>
-            <div className="contact__social c10">
-              {
-                social
-                  ? 
-                  <>
-                    <CloseIcon className="close--icon" onClick={ handleSocial }/>
-                    <SocialContact />
-                  </>
-                  : <h3 className="titles" onClick={ handleSocial }>social</h3>
-                  
-              }
-            </div>
+                        <ContactForm handleForm={ handleForm }/>
+                      </>
+                    :
+                      <h3 className="titles" onClick={ handleForm }>email</h3>
+                  }
+                </div>
+            }
+
+            {
+              !form && 
+                <div className="contact__social c10">
+                  {
+                    social
+                      ? 
+                      <>
+                        <CloseIcon className="close--icon" onClick={ handleSocial }/>
+                        <SocialContact />
+                      </>
+                      : <h3 className="titles" onClick={ handleSocial }>social</h3>
+                      
+                  }
+                </div>
+            }
           </div>
         </section>
   )

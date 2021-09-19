@@ -1,0 +1,26 @@
+@media only screen and ( min-width: 667px ) {
+  .contact__method {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact__email, .contact__social {
+    // width: 50%;
+  }
+}
+
+@media only screen and ( min-width: 768px ) {
+  .name--field, .email--field, .phone--field, .subject--field, .message--field {
+    font-size: $large-font-size;
+    height: 6rem;
+  }
+  
+}
+
+@media only screen and ( min-width: 1024px ) {
+  
+  .contact__email, .contact__social {
+    // width: 50%;
+  }
+  
+}

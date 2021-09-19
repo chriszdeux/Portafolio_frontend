@@ -4,16 +4,15 @@ import { CgArrowLeftR as LeftIcon, CgArrowRightR as RightIcon } from 'react-icon
 
 import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
 import { useOpenContent } from '../hooks/useOpenContent';
+import { Hobbie } from './Hobbie';
 
 export const HobbiesPage = () => {
   const { openContent, handleOpenContent } = useOpenContent()
   return (
     <section className="hobbies__section c9">
-      <div className="hobbie">
-        <h3 className="titles">what i like?</h3>
-        <p className="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sed harum hic consectetur, vero illo nemo tempore aspernatur doloremque in deleniti fugiat, ipsum numquam eos quasi debitis, praesentium magni rerum.</p>
-        <button className="btn btn--primary gallery" onClick={ handleOpenContent }>gallery</button>
-      </div>
+      <Hobbie />
+      <Hobbie />
+      <Hobbie />
 
       {
         openContent &&

@@ -1,16 +1,48 @@
 .portafolio {
-  margin-top: 6rem;
+  margin-top: 2rem;
+}
+
+.portafolio__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .projects {
   display: flex;
+  position: relative;
   justify-content: space-evenly;
   align-items: center;
-  height: 5rem;
-  margin-top: 3rem;
+  min-height: 20rem;
+  // margin-top: 3rem;
   background-color: $second-background-color;
   box-shadow: $box-shadow;
-  transition: .4s ease-in;
+  transition: .3s ease-in;
+  overflow: hidden;
+
+  .sub--title {
+    display: flex;
+    align-items: center;
+  }
+  .project__img {
+    position: absolute;
+    min-height: inherit;
+    top: 0;
+    left: 0;
+    // border: 1px solid white;
+  
+    .project--img {
+      width: 100%;
+      min-height: inherit;
+      object-fit: cover;
+    }
+}
+
+}
+
+.projects:hover {
+  box-shadow: $box-shadow-active;
 }
 
 .projects:hover .project__options {
@@ -38,17 +70,29 @@
   text-align: center;
 }
 
-.project__image {
+.project__main__image {
   background-color: $main-color;
   height: 20rem;
-  margin: 1rem 0;
+  margin-top: 2rem;
+  // margin: 1rem 0;
 
-  .project--image {
+  .project--main--image {
     width: 100%;
     height: inherit;
+    object-fit: cover;
   }
 }
 
+.project__screenshot {
+  width: 100%;
+  height: 20rem;
+
+  .project--screenshot {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+}
 .technologies {
   display: flex;
   z-index: 1;

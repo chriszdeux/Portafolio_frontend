@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAIA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;CACb",
+    "mappings": "AASA,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;CACb",
     "sources": [
         "hobbies-page.scss"
     ],

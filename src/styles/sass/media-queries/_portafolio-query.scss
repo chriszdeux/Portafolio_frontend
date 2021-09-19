@@ -1,0 +1,53 @@
+@media only screen and ( min-width: 667px ) {
+  .portafolio__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .project__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media only screen and ( min-width: 768px ) {
+  
+  .project__main__image {
+    height: 40rem;
+  }
+  .project__gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project__image {
+    // height: 40rem;
+
+  }
+}
+
+@media only screen and ( min-width: 1024px ) {
+  .project__image {
+    height: 40rem;
+  }
+}
+
+@media only screen and ( min-width: 1366px ) {
+  .project__image {
+    height: 40rem;
+  }
+}
+
+
+@media only screen and ( min-width: 1688px ) {
+  .portafolio__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .modal__project {
+    width: 70%;
+    height: 50vh;
+  }
+  .project__main__image {
+    width: 50%;
+  }
+}

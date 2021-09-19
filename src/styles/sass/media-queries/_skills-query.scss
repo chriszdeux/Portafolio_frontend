@@ -1,0 +1,29 @@
+@media only screen and ( min-width: 667px ) {
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and ( min-width: 1688px ) {
+  
+  .skills__grid {
+    grid-template-columns: repeat(4, 1fr);
+    // justify-content: center;
+  }
+  
+  .skills__modal {
+    
+    .react--icon {
+      font-size: $extra-jumbo-font-size;
+    }
+
+    .titles {
+      font-size: $extra-jumbo-font-size;
+    }
+
+    .paragraph {
+      width: 70%;
+      text-align: center;
+    }
+  }
+}

@@ -295,6 +295,12 @@ body {
   margin: 0 auto;
 }
 
+.c4 {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .c2 {
   width: 20%;
   height: auto;
@@ -452,6 +458,31 @@ body {
   color: #ececec;
 }
 
+.desk__menu {
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desk__menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.desk__menu .menu__list .menu--item {
+  font-size: 1.8rem;
+  color: #ececec;
+  margin-right: 2rem;
+}
+
 .hero__area {
   -webkit-box-shadow: 0 0 5px 5px #00000008;
           box-shadow: 0 0 5px 5px #00000008;
@@ -511,7 +542,7 @@ body {
   height: 100vh;
       grid-template-areas: 'hero hero' 'hero hero' 'projects projects' 'about skills' 'about hobbies' 'contact hobbies';
   gap: 1rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -574,26 +605,64 @@ body {
 }
 
 .portafolio {
-  margin-top: 6rem;
+  margin-top: 2rem;
+}
+
+.portafolio__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 5rem;
-  margin-top: 3rem;
+  min-height: 20rem;
   background-color: #252525;
   -webkit-box-shadow: 0 0 5px 5px #00000008;
           box-shadow: 0 0 5px 5px #00000008;
-  -webkit-transition: .4s ease-in;
-  transition: .4s ease-in;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  overflow: hidden;
+}
+
+.projects .sub--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .project__img {
+  position: absolute;
+  min-height: inherit;
+  top: 0;
+  left: 0;
+}
+
+.projects .project__img .project--img {
+  width: 100%;
+  min-height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects:hover {
+  -webkit-box-shadow: 0 0 5px 5px #2f2f2f;
+          box-shadow: 0 0 5px 5px #2f2f2f;
 }
 
 .projects:hover .project__options {
@@ -630,15 +699,29 @@ body {
   text-align: center;
 }
 
-.project__image {
+.project__main__image {
   background-color: #313131;
   height: 20rem;
-  margin: 1rem 0;
+  margin-top: 2rem;
 }
 
-.project__image .project--image {
+.project__main__image .project--main--image {
   width: 100%;
   height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project__screenshot {
+  width: 100%;
+  height: 20rem;
+}
+
+.project__screenshot .project--screenshot {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .technologies {
@@ -741,7 +824,7 @@ body {
 }
 
 .skills__title {
-  margin: 5rem 0;
+  margin: 2rem 0;
   font-size: 3rem;
 }
 
@@ -763,6 +846,11 @@ body {
   background-color: #252525;
   -webkit-box-shadow: 0 0 5px 5px #00000008;
           box-shadow: 0 0 5px 5px #00000008;
+}
+
+.skill__item:hover {
+  -webkit-box-shadow: 0 0 5px 5px #2f2f2f;
+          box-shadow: 0 0 5px 5px #2f2f2f;
 }
 
 .technology--name {
@@ -788,6 +876,50 @@ body {
 
 .close--skills {
   top: 10%;
+}
+
+.hobbie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem 0;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 5px 5px #00000008;
+          box-shadow: 0 0 5px 5px #00000008;
+  -webkit-transition: .4s ease-in;
+  transition: .4s ease-in;
+}
+
+.hobbie:hover {
+  -webkit-box-shadow: 0 0 5px 5px #2f2f2f;
+          box-shadow: 0 0 5px 5px #2f2f2f;
+}
+
+.hobbie:nth-child(2n + 0) .titles {
+  text-align: right;
+}
+
+.hobbie:nth-child(2n + 0) .btn {
+  float: left;
+}
+
+.hobbie__info {
+  width: 50%;
+}
+
+.image__aside {
+  width: 100%;
+  height: 20rem;
+}
+
+.image__aside .image--aside {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallery {
@@ -990,5 +1122,141 @@ body {
       grid-template-areas: "name name" "email phone" "subject subject" "message message";
   gap: 1rem;
   margin-top: 5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+        grid-template-areas: 'hero hero projects' 'hero hero skills' 'hobbies about about' 'contact about about';
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .navbar__list {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .c9 .menu--icon {
+    display: none;
+  }
+  .desk__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .portafolio__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .project__gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__main__image {
+    height: 40rem;
+  }
+  .project__gallery {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .project__image {
+    height: 40rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .project__image {
+    height: 40rem;
+  }
+}
+
+@media only screen and (min-width: 1688px) {
+  .portafolio__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .modal__project {
+    width: 70%;
+    height: 50vh;
+  }
+  .project__main__image {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .profile__picture {
+    width: 20%;
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about__me {
+    height: 40rem;
+  }
+  .profile__picture {
+    width: 30%;
+    height: 30rem;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .skills__grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1688px) {
+  .skills__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .skills__modal .react--icon {
+    font-size: 8rem;
+  }
+  .skills__modal .titles {
+    font-size: 8rem;
+  }
+  .skills__modal .paragraph {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  .contact__method {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .name--field, .email--field, .phone--field, .subject--field, .message--field {
+    font-size: 2rem;
+    height: 6rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

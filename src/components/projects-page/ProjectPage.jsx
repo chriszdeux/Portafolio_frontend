@@ -8,10 +8,13 @@ export const ProjectPage = () => {
   // debugger
   return (
 <>
-    <section className="portafolio">
-      <div className="c9">
-        <h2 className="titles">Portafolio</h2>
+    <section className="portafolio c9">
+      <h2 className="titles">Portafolio</h2>
+      <div className="portafolio__grid c10">
         <div className="projects c10">
+          <figure className="project__img c10">
+            <img className="project--img" src="" alt="" />
+          </figure>
           <h3 className="sub--title">Project name</h3>
           <div className="project__options">
             <FolderIcon 

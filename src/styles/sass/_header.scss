@@ -18,3 +18,24 @@
   font-size: $regular-font-size;
   color: $overlay-color;
 }
+
+.desk__menu {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+
+  // a {
+  //   text-decoration: none;
+  // }
+  .menu__list {
+    // width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .menu--item {
+      font-size: $regular-font-size;
+      color: $overlay-color;
+      margin-right: 2rem;
+    }
+  }
+}

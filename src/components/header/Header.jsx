@@ -43,6 +43,18 @@ export const Header = () => {
       <header className="header c10">
         <div className="c9">
           <h2 className="sub-title">Portafolio</h2>
+          <nav className="desk__menu c10">
+          <ul className="menu__list">
+          {
+            menuList.map(({section, route}) => (
+              <NavLink exact to={ route } activeClassName="active__navigation">
+                <li className="menu--item c10">{ section }</li>
+              </NavLink>
+            ))
+          }
+          </ul>
+
+        </nav>
           {
             !open 
             ? 
@@ -58,6 +70,7 @@ export const Header = () => {
             
           }
         </div>
+        
       </header>
       {
         open && 

@@ -5,7 +5,7 @@
 }
 
 .skills__title {
-  margin: 5rem 0;
+  margin: 2rem 0;
   font-size: $jumbo-font-size;
 }
 
@@ -17,6 +17,10 @@
   height: 15rem;
   background-color: $second-background-color;
   box-shadow: $box-shadow;
+}
+
+.skill__item:hover {
+  box-shadow: $box-shadow-active;
 }
 
 .technology--name {

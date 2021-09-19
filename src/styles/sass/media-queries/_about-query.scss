@@ -1,0 +1,19 @@
+@media only screen and ( min-width: 667px ) {
+  .profile__picture {
+    width: 20%;
+    height: 15rem;
+  }
+}
+
+@media only screen and ( min-width: 1024px ) {
+  
+  .about__me {
+    height: 40rem;
+  }
+  
+  .profile__picture {
+    width: 30%;
+    height: 30rem;
+  }
+}
+

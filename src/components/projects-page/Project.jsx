@@ -15,9 +15,9 @@ export const Project = ({ handleOpenContent }) => {
       </div>
         <div className="modal__project">
           {/* <ReactIcon className="react--icon lg--icon"/> */}
-          <figure className="project__image c10">
-            <img className="project--image" src="https://monitoreducativo.com/wp-content/uploads/2020/04/moe-0038_1200x675-768x432.png" alt="" />
-            {/* <img className="project--image" src="" alt="" /> */}
+          <figure className="project__main__image c10">
+            <img className="project--main--image" src="https://monitoreducativo.com/wp-content/uploads/2020/04/moe-0038_1200x675-768x432.png" alt="" />
+            {/* <img className="project--screenshot" src="" alt="" /> */}
           </figure>
         <h2 className="titles">Project name</h2>
         <ul className="technologies">
@@ -33,14 +33,14 @@ export const Project = ({ handleOpenContent }) => {
         </div>
 
         <div className="project__gallery c10">
-          <figure className="project__image">
-            <img className="project--image" src="" alt="" />
+          <figure className="project__screenshot">
+            <img className="project--screenshot" src="" alt="" />
           </figure>
-          <figure className="project__image">
-            <img className="project--image" src="" alt="" />
+          <figure className="project__screenshot">
+            <img className="project--screenshot" src="" alt="" />
           </figure>
-          <figure className="project__image">
-            <img className="project--image" src="" alt="" />
+          <figure className="project__screenshot">
+            <img className="project--screenshot" src="" alt="" />
           </figure>
         </div>
         </div>
