@@ -20,7 +20,7 @@ export const ContactPage = () => {
           <div className="contact__method c9">
             {
               !social &&
-                <div className="contact__email c10">
+                <div className="contact__email c10 animate__animated animate__fadeInLeft">
                   {
                     form 
                     ? 
@@ -37,7 +37,7 @@ export const ContactPage = () => {
 
             {
               !form && 
-                <div className="contact__social c10">
+                <div className="contact__social c10 animate__animated animate__fadeInRight">
                   {
                     social
                       ? 

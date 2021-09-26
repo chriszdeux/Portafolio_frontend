@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RiMenu3Fill as MenuIcon } from "react-icons/ri";
 import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
+import { DataContext } from '../../context/dataContext';
 
 const menuList = [
   {
@@ -36,8 +37,9 @@ const menuList = [
   },
 ]
 export const Header = () => {
-
+  const { animation: { fade_right } } = useContext( DataContext )
   const [open, setOpen] = useState(false)
+  // debugger
   return (
     <>
       <header className="header c10">
@@ -76,9 +78,9 @@ export const Header = () => {
         open && 
         <div className="modal">
           
-          <div className="layout" onClick={ () => setOpen(false) }>
+          <div className="layout animate__animated animate__fadeInRight" onClick={ () => setOpen(false) }>
           </div>
-          <div className="navbar__modal">
+          <div className="navbar__modal animate__animated animate__fadeInRight" style={{ animationDelay: '.3s' }} >
             <nav className="navbar c9">
               <ul className="navbar__list">
                 {

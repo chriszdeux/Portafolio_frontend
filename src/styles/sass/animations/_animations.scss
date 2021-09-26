@@ -1,0 +1,90 @@
+@mixin animation-properties($name,  $times, $delay) {
+  opacity: 0;
+  animation-name: $name;
+  animation-duration: .5s;
+  -o-animation-timing-function: ease-in;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  // animation-direction: ;
+}
+
+@mixin animation-fade-top {
+  animation-name: fadeTop;
+  animation-duration: 5s;
+  -o-animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateY(-10rem);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes translateRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem)
+  }
+  0% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+// @keyframes join-text {
+//   0% {
+//     opacity: 0;
+//     letter-spacing: 
+//   }
+// }
+
+
+.fade--in {
+  @include animation-properties(fadeIn, 1, .5s)
+}
+
+.fade--top {
+  @include animation-fade-top();
+}
+
+.translate--right {
+  @include animation-properties(translateRight, 1, .3s);
+  transform: translateX(-3rem);
+} 
+
+.hero--animation {
+  @include animation-properties(fadeIn, 1, .4s)
+}
+.projects--animation {
+  @include animation-properties(fadeIn, 1, .8s)
+}
+.skills--animation {
+  @include animation-properties(fadeIn, 1, 1.2s)
+}
+.about--animation {
+  @include animation-properties(fadeIn, 1, 1.6s)
+}
+.hobbies--animation {
+  @include animation-properties(fadeIn, 1, 2s)
+}
+.contact--animation {
+  @include animation-properties(fadeIn, 1, 2.4s)
+}
