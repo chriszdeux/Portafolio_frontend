@@ -16,7 +16,7 @@
   align-items: center;
   min-height: 20rem;
   // margin-top: 3rem;
-  background-color: $second-background-color;
+  background-color: $background-color;
   box-shadow: $box-shadow;
   transition: .3s ease-in;
   overflow: hidden;
@@ -24,6 +24,11 @@
   .sub--title {
     display: flex;
     align-items: center;
+  }
+
+  .project--sub--title {
+    font-size: $large-font-size;
+    color: $font-color;
   }
   .project__img {
     position: absolute;
@@ -42,7 +47,7 @@
 }
 
 .projects:hover {
-  box-shadow: $box-shadow-active;
+  // box-shadow: $box-shadow-active;
 }
 
 .projects:hover .project__options {
@@ -62,7 +67,7 @@
   height: 90vh;
   position: fixed;
   top: 50%;
-  background-color: $secondary-color;
+  background-color: $background-color-active;
   /* margin: 0 auto; */
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -71,7 +76,7 @@
 }
 
 .project__main__image {
-  background-color: $main-color;
+  // background-color: $font-color;
   height: 20rem;
   margin-top: 2rem;
   // margin: 1rem 0;

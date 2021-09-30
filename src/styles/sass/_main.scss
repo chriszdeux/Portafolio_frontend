@@ -8,8 +8,7 @@
   // border: 2px solid $border-color;
   text-align: center;
   transition: .3s ease;
-  background-color: $second-background-color;
-  color: $secondary-color;
+  color: $font-color;
   box-shadow: $box-shadow;
   border-radius:10px;
 }
@@ -17,12 +16,13 @@
 @mixin section-area($section) {
   box-shadow: $box-shadow;
   grid-area: $section;
+  background-color: $background-color;
 }
 
 @mixin info-section($background) {
   background-color: $background;
   display: none;
-  color: $secondary-color;
+  color: $font-color;
 }
 
 .hero__area {
@@ -56,32 +56,32 @@
   'about hobbies'
   'contact hobbies'
   ;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 2rem;
   text-align: center;
-  // background-color: $overlay-color;
 }
 .main__sections {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $second-background-color;
+  // background-color: $background-color;
   transition: .5s ease;
+  color: $font-color;
 }
 
 .main__sections:hover {
-  border: 1px solid $border-color;
+  // border: 1px solid $border-color;
 }
 
 .main__sections:active {
-  box-shadow: $box-shadow-active;
+  // box-shadow: $box-shadow-active;
   // transform: scale(1.05);
 }
 
 .titles {
   margin: 1rem 0;
   font-size: $large-font-size;
-  color: $text-color;
+  color: $font-color;
 }
 
 .info__section {

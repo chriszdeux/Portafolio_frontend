@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,sBAAsB,CAAC;EACrB,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,EAAE;CACZ;;AAED,AAAA,QAAQ,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,MAAM,EAAE,IAAI,CAAC,KAAK,CCkBN,SAAS;CDjBtB",
+    "sources": [
+        "animations-effects.scss",
+        "../_variables.scss"
+    ],
+    "names": [],
+    "file": "animations-effects.css"
+}

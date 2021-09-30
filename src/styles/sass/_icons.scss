@@ -5,29 +5,34 @@
 
 @mixin slider-controls {
   font-size: $jumbo-font-size;
-  color: $overlay-color;
+  color: $font-color-active;
   opacity: 0.4;
 }
 
 .menu--icon {
-  @include icons($overlay-color)
+  @include icons($font-color-active)
 }
 
 .close--icon {
-  @include icons($overlay-color);
+  @include icons($font-color-active);
   z-index: 2;
 }
 .folder--icon {
-  @include icons($overlay-color);
+  @include icons($font-color);
+  transition: ease .3s;
+}
+
+.folder--icon:active {
+  transform: scale(1.2)
 }
 .link--icon {
-  @include icons($overlay-color);
+  @include icons($font-color);
 }
 .live--icon {
-  @include icons($overlay-color);
+  @include icons($font-color);
 }
 .github--icon {
-  @include icons($overlay-color);
+  @include icons($font-color-active);
 }
 .react--icon {
   @include icons($react-color);

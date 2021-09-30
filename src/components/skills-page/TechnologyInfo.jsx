@@ -1,6 +1,7 @@
 import React from 'react'
 import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
 import { SiHtml5 as HtmlIcon, SiCss3 as CssIcon, SiJavascript as JsIcon, SiSass as SassIcon, SiReact as ReactIcon, SiGithub as GithubIcon } from 'react-icons/si';
+import { CircleBackground } from '../animations/CircleBackground';
 
 export const TechnologyInfo = ({ handleOpenContent }) => {
   return (
@@ -14,6 +15,8 @@ export const TechnologyInfo = ({ handleOpenContent }) => {
           <p className="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veritatis corrupti totam quisquam ratione consectetur quos porro cumque id nesciunt incidunt nam necessitatibus veniam natus numquam, non vero recusandae nostrum?, adipisicing elit. Voluptatum, hic.</p>
           <button className="btn btn-primary">Read more</button>
         </div>
+
+        <CircleBackground />
     </div>
   )
 }

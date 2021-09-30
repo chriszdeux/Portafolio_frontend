@@ -10,16 +10,16 @@
   outline: none;
   border: none;
   box-shadow: $box-shadow;
-  background-color: $backgorund-color;
-  color: $text-color;
+  // background-color: $backgorund-color;
+  color: $font-color;
   transition: .3s ease;
 }
 
 .btn:hover {
-  border: 1px solid $border-color;
+  // border: 1px solid $border-color;
 }
 .btn:active {
-  box-shadow: $box-shadow-active;
+  // box-shadow: $box-shadow-active;
 }
 
 .btn--primary {

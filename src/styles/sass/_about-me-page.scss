@@ -1,5 +1,9 @@
 .about__me__page {
   // margin-top: 5rem;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .about__me {

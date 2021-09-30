@@ -15,12 +15,12 @@
   justify-content: center;
   align-items: center;
   height: 15rem;
-  background-color: $second-background-color;
+  // background-color: $background-color-active;
   box-shadow: $box-shadow;
 }
 
 .skill__item:hover {
-  box-shadow: $box-shadow-active;
+  // box-shadow: $box-shadow-active;
 }
 
 .technology--name {

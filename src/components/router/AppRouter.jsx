@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import { AboutMePage } from '../about-me-page/AboutMePage';
+import { CircleBackground } from '../animations/CircleBackground';
 import { ContactPage } from '../contact-page/ContactPage';
 import { Header } from '../header/Header';
 import { HobbiesPage } from '../hobbies-page/HobbiesPage';
@@ -29,6 +30,7 @@ export const AppRouter = () => {
         <div className="box2"></div>
         <div className="box3"></div>
       </section> */}
+      <CircleBackground />
     </Router>
   )
 }

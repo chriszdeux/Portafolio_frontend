@@ -1,15 +1,13 @@
-$gray-color: #A0A0A0;
-$main-color: #313131;
-$secondary-color: #29292969;
-$overlay-color: #ececec;
-$backgorund-color: #212121;
-$second-background-color: #252525;
-// $backgorund-color: #3b3b3b;
-$shadow-color: #00000008;
-$shadow-color-active: #2f2f2f;
-$text-color: #ececec;
-$border-color: #474646d3;
-$btn-primary-color: #2d4049;
+$background-color: #fffffff3;
+$background-color-active: #333333;
+$background-modal: #222222ab;
+$font-color: #363636fa;
+$font-color-active: #f0f0f0;
+$background-modal: #3333335d;
+
+// $border-color: ;
+$shadow-color: #33333347;
+
 
 $projects-color: #FFC5C5;
 $projects-color-active: #ff9595;
@@ -51,7 +49,7 @@ $regular-weight: 400;
 $heavy-weight: 500;
 
 $box-shadow: 0 0 5px 5px $shadow-color;
-$box-shadow-active: 0 0 5px 5px $shadow-color-active;
+// $box-shadow-active: 0 0 5px 5px $shadow-color-active;
 
 $small-icon: 3rem;
 $regular-icon: 5rem;

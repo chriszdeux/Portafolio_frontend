@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { BackgroundAnimation } from './components/animations/BackgroundAnimation';
 import { Header } from './components/header/Header'
 import { MainPage } from './components/main-page/MainPage';
 import { AppRouter } from './components/router/AppRouter';
@@ -19,6 +20,7 @@ export const Portafolio = () => {
     }}>
       <AppRouter />
     </DataContext.Provider>
+    {/* <BackgroundAnimation /> */}
     </>
   )
 }

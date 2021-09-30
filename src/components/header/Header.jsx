@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { RiMenu3Fill as MenuIcon } from "react-icons/ri";
 import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
 import { DataContext } from '../../context/dataContext';
+import { Menu } from './Menu'
+import { CircleBackground } from '../animations/CircleBackground';
 
 const menuList = [
   {
@@ -16,14 +18,14 @@ const menuList = [
     route: '/project-page'
   },
   {
-    section: 'About Me',
-    class_name: 'about__section',
-    route: '/about-me-page'
-  },
-  {
     section: 'My skills',
     class_name: 'knowledge__section',
     route: '/skills-page'
+  },
+  {
+    section: 'About Me',
+    class_name: 'about__section',
+    route: '/about-me-page'
   },
   {
     section: 'Hobbies',
@@ -39,18 +41,24 @@ const menuList = [
 export const Header = () => {
   const { animation: { fade_right } } = useContext( DataContext )
   const [open, setOpen] = useState(false)
+
+  const handleClose = () => {
+
+    return setOpen(false)
+    debugger
+  }
   // debugger
   return (
     <>
       <header className="header c10">
         <div className="c9">
-          <h2 className="sub-title">Portafolio</h2>
+          <h2 className="sub--title">Portafolio</h2>
           <nav className="desk__menu c10">
           <ul className="menu__list">
           {
             menuList.map(({section, route}) => (
-              <NavLink exact to={ route } activeClassName="active__navigation">
-                <li className="menu--item c10">{ section }</li>
+              <NavLink exact to={ route } activeClassName="active__navigation" >
+                <li className="menu--item c10" >{ section }</li>
               </NavLink>
             ))
           }
@@ -76,6 +84,8 @@ export const Header = () => {
       </header>
       {
         open && 
+
+        // <Menu />
         <div className="modal">
           
           <div className="layout animate__animated animate__fadeInRight" onClick={ () => setOpen(false) }>
@@ -86,12 +96,13 @@ export const Header = () => {
                 {
                   menuList.map(({section, route}) => (
                     <NavLink exact to={ route } activeClassName="active__navigation">
-                      <li className="navbar--item c10">{ section }</li>
+                      <li className="navbar--item c10" onClick={ handleClose }>{ section }</li>
                     </NavLink>
                   ))
                 }
               </ul>
             </nav>
+            {/* <CircleBackground /> */}
           </div>
         </div>
       }

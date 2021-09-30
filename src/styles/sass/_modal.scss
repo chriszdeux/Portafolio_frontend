@@ -6,7 +6,7 @@
   height: $height;
   position: $position;
   right: 0;
-  background-color: $secondary-color;
+  // background-color: $background-color-active;
   box-shadow: $box-shadow;
 }
 
@@ -17,7 +17,7 @@
     overflow: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    background-color: $backgorund-color;
+    // background-color: $backgorund-color;
     top: 50%;
     right: 50%;
     padding: 1rem;
@@ -32,11 +32,12 @@
   top: 0;
   z-index: 1;
   // overflow-y: scroll;
+  background-color: $background-modal;
   .close--icon {
     position: fixed;
     top: 3%;
     right: 6%;
-    color: $overlay-color;
+    color: $font-color-active;
     z-index: 2;
   }
 }
@@ -45,18 +46,18 @@
   @include modal-mixin(100%,100vh , fixed);
   top: 0;
   right: 0;
-  background-color: $second-background-color;
-  opacity: 0.5;
+  // background-color: $background-color;
+  opacity: 0.3;
   // filter: blur(1rem)
 }
 
 .navbar__modal {
   @include modal-mixin(70%, 100vh, absolute);
+  background-color: $background-color-active;
   // display: flex;
   // justify-content: center;
   // align-items: center;
   // right: 0;
-  // background-color: $secondary-color;
   // box-shadow: $box-shadow;
   // .close--icon {
     //   position: fixed;
@@ -70,7 +71,7 @@
     text-align: end;
     font-size: $jumbo-font-size;
     margin-bottom: 2rem;
-    color: $overlay-color;
+    color: $font-color-active;
     transition: .6s ease;
   }
   
@@ -82,6 +83,18 @@
   
   .modal__project {
     @include modal-responsive();
+    background-color: $background-color-active;
+    border-radius: 8px;
+    // overflow: hidden;
+    
+    .titles {
+      color: $font-color-active;
+    }
+    
+    .paragraph {
+      color: $font-color-active;
+
+    }
     
   }
   

@@ -5,6 +5,7 @@
   -o-animation-timing-function: ease-in;
   animation-delay: $delay;
   animation-fill-mode: forwards;
+  will-change: auto;
   // animation-direction: ;
 }
 

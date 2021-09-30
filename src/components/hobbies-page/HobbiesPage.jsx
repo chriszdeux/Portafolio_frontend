@@ -11,12 +11,13 @@ export const HobbiesPage = () => {
   const { openContent, handleOpenContent } = useOpenContent()
   return (
     <section className="hobbies__section c9 animate__animated animate__fadeIn">
+      <h2 className="titles">Hobbies</h2>
       <Hobbie handleOpenContent={ handleOpenContent } />
       <Hobbie handleOpenContent={ handleOpenContent } />
       <Hobbie handleOpenContent={ handleOpenContent } />
 
       {
-        openContent && <HobbieGallery />
+        openContent && <HobbieGallery handleOpenContent={ handleOpenContent }/>
           
       }
     </section>

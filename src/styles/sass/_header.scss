@@ -2,8 +2,8 @@
   // position: fixed;
   top: 0;
   height: 5rem;
-  background-color: $secondary-color;
-  border-bottom: 1px solid $gray-color;
+  background-color: $background-color-active;
+  // border-bottom: 1px solid $gray-color;
   z-index: 1;
   .c9 {
     display: flex;
@@ -16,7 +16,7 @@
 .sub--title {
   margin: 1rem 0;
   font-size: $regular-font-size;
-  color: $overlay-color;
+  color: $font-color-active;
 }
 
 .desk__menu {
@@ -34,7 +34,7 @@
 
     .menu--item {
       font-size: $regular-font-size;
-      color: $overlay-color;
+      color: $font-color;
       margin-right: 2rem;
     }
   }
