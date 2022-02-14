@@ -21,18 +21,18 @@ $contact-color: #ffdfa3;
 $contact-color-active: #ffcb6a;
 
 
-$html-color: #d84b24b2;
-$html-color-active: #D84B24;
-$css-color: #2B6CADb2;
-$css-color-active: #2B6CAD;
-$js-color: #CBB133b2;
-$js-color-active: #CBB133;
-$sass-color: #C26191b2;
-$sass-color-active: #C26191;
-$npm-color: #C13534b2;
-$npm-color-active: #C13534;
-$react-color: #58DAFBb2;
-$react-color-active: #58DAFB;
+$html-color: #d84b24;
+// $html-color-active: #D84B24;
+$css-color: #2B6CAD;
+// $css-color-active: #2B6CAD;
+$js-color: #ffe047;
+// $js-color-active: #CBB133;
+$sass-color: #C26191;
+// $sass-color-active: #C26191;
+$npm-color: #C13534;
+// $npm-color-active: #C13534;
+$react-color: #58DAFB;
+// $react-color-active: #58DAFB;
 $github-color: #272727;
 
 $other-color: #424242;
@@ -48,7 +48,7 @@ $light-weight: 300;
 $regular-weight: 400;
 $heavy-weight: 500;
 
-$box-shadow: 0 0 5px 5px $shadow-color;
+$box-shadow: 0 0 3px 3px $shadow-color;
 // $box-shadow-active: 0 0 5px 5px $shadow-color-active;
 
 $small-icon: 3rem;

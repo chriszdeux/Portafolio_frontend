@@ -8,15 +8,11 @@ export const projectsData = [
     },
     img: '',
     description: "A website where you can check your favorite games. Check from most recent games, information, images and more. This website consumes the RAWG API to consult the latest in videogames.",
-    gallery: [
-      {
-        screenshot: ''
-      },
-    ]
+    gallery: ['', '', '']
   },
 
   {
-    id: '',
+    id: '2',
     title: 'IGallery',
     links: {
       live: '',
@@ -24,10 +20,6 @@ export const projectsData = [
     },
     img: '',
     description: 'Check out Fantastic images of extraordinary photographers, visit their work and admire the world with the eyes of a photographer. This website allows you to consult images from different photographers, it consumes the Unspash API',
-    gallery: [
-      {
-        screenshot: ''
-      },
-    ]
+    gallery: ['', '', '']
   },
 ]

@@ -1,8 +1,12 @@
 body {
   background-color: $background-color;
   color: $font-color;
+  // overflow: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
 .active__navigation {
   color: $react-color;
 }

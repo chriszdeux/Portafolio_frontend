@@ -2,11 +2,11 @@ import React from 'react'
 
 export const MainSectionAboutMe = () => {
   return (
-    <div className="about__me">
+    <div className="about__me c10">
       <figure className="about__me__background c10">
         <img className="about--me--background" src="" alt="" />
       </figure>
-      <div className="about__me__info c9 fade--in" style={{ animationDelay: '1s' }}>
+      <div className="about__me__info c9" style={{ animationDelay: '1s' }}>
         <figure className="profile__picture">
           <img className="profile--picture" src="" alt="" />
         </figure>

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const AboutMeMore = () => {
   return (
-    <div className="about__me__more animate__animated animate__fadeInRight">
+    <div className="about__me__more animate__animated animate__fadeInLeft" style={{ animationDelay: '1s' }}>
       <NavLink to="/hobbies-page">
         <button className="btn btn--primary">what i like?</button>
       </NavLink>

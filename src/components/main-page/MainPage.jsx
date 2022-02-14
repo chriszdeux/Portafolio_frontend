@@ -69,7 +69,7 @@ export const MainPage = () => {
     <main className="main c9 hero--animation">
       {
         gridTemplate.map(({section, area, route, animation, delay} ) => (
-          <div className={`main__sections ${area} animation__animated animation__fadeIn`} style={{ animationDelay: '1s' }}>
+          <div key={ area } className={`main__sections ${area} animation__animated animation__fadeIn`} style={{ animationDelay: '1s' }}>
             <NavLink exact to={ route }>
             <h2 className="titles">{ section }</h2>
             </NavLink>

@@ -13,10 +13,12 @@ ul, li, ol {
 html {
   font-size: 62.5%;
   font-family: "Alegreya Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -24,8 +26,12 @@ body {
   color: #363636fa;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .active__navigation {
-  color: #58DAFBb2;
+  color: #58DAFB;
 }
 
 .paragraph {
@@ -55,7 +61,7 @@ body {
           animation-iteration-count: infinite;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  border: 4px solid #58DAFBb2;
+  border: 4px solid #58DAFB;
   top: 10%;
   right: 15%;
   bottom: 30%;
@@ -74,7 +80,7 @@ body {
           animation-iteration-count: infinite;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  border: 4px solid #d84b24b2;
+  border: 4px solid #d84b24;
   top: 35%;
   right: 10%;
   bottom: 5%;
@@ -95,7 +101,7 @@ body {
           animation-iteration-count: infinite;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  border: 4px solid #CBB133b2;
+  border: 4px solid #ffe047;
   top: 20%;
   right: 5%;
   bottom: 50%;
@@ -205,27 +211,32 @@ body {
 
 .github--icon {
   font-size: 2.2rem;
-  color: #f0f0f0;
+  color: #272727;
 }
 
 .react--icon {
   font-size: 2.2rem;
-  color: #58DAFBb2;
+  color: #58DAFB;
 }
 
 .sass--icon {
   font-size: 2.2rem;
-  color: #C26191b2;
+  color: #C26191;
+}
+
+.css--icon {
+  font-size: 2.2rem;
+  color: #2B6CAD;
 }
 
 .html--icon {
   font-size: 2.2rem;
-  color: #d84b24b2;
+  color: #d84b24;
 }
 
 .js--icon {
   font-size: 2.2rem;
-  color: #CBB133b2;
+  color: #ffe047;
 }
 
 .left--icon {
@@ -255,8 +266,8 @@ body {
   text-align: center;
   outline: none;
   border: none;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   color: #363636fa;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -266,42 +277,49 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .c9 {
   width: 90%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .c8 {
   width: 80%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .c7 {
   width: 70%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .c5 {
   width: 50%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .c4 {
   width: 40%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .c2 {
   width: 20%;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .modal {
@@ -318,8 +336,8 @@ body {
   height: 100vh;
   position: fixed;
   right: 0;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   overflow: scroll;
   top: 0;
   z-index: 1;
@@ -348,8 +366,8 @@ body {
   height: 100vh;
   position: fixed;
   right: 0;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   top: 0;
   right: 0;
   opacity: 0.3;
@@ -369,8 +387,8 @@ body {
   height: 100vh;
   position: absolute;
   right: 0;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   background-color: #333333;
 }
 
@@ -481,13 +499,13 @@ body {
 
 .desk__menu .menu__list .menu--item {
   font-size: 1.8rem;
-  color: #363636fa;
   margin-right: 2rem;
+  color: #f0f0f0;
 }
 
 .hero__area {
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -497,8 +515,8 @@ body {
 }
 
 .projects__area {
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -507,8 +525,8 @@ body {
 }
 
 .about__area {
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -517,8 +535,8 @@ body {
 }
 
 .skills__area {
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: skills;
@@ -526,8 +544,8 @@ body {
 }
 
 .hobbies__area {
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 5;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -536,8 +554,8 @@ body {
 }
 
 .contact__area {
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: contact;
@@ -552,6 +570,7 @@ body {
   gap: 2rem;
   margin-top: 2rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .main__sections {
@@ -629,8 +648,8 @@ body {
           align-items: center;
   min-height: 20rem;
   background-color: #fffffff3;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   overflow: hidden;
@@ -760,9 +779,9 @@ body {
 }
 
 .about__me__page {
+  width: 100%;
   height: 100vh;
   overflow: hidden;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -772,12 +791,13 @@ body {
   display: flex;
   height: 20rem;
   position: relative;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   margin-bottom: 2rem;
 }
 
 .about__me .about__me__background {
+  width: 100%;
   position: absolute;
   height: inherit;
   top: 0;
@@ -831,6 +851,7 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  padding: 1rem;
 }
 
 .skills__title {
@@ -853,8 +874,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 15rem;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
 }
 
 .technology--name {
@@ -878,6 +899,10 @@ body {
           justify-content: center;
 }
 
+.skills__modal .github--icon {
+  color: #fffffff3;
+}
+
 .close--skills {
   top: 10%;
 }
@@ -890,8 +915,8 @@ body {
           justify-content: space-between;
   margin: 1rem 0;
   padding: 1rem;
-  -webkit-box-shadow: 0 0 5px 5px #33333347;
-          box-shadow: 0 0 5px 5px #33333347;
+  -webkit-box-shadow: 0 0 3px 3px #33333347;
+          box-shadow: 0 0 3px 3px #33333347;
   -webkit-transition: .4s ease-in;
   transition: .4s ease-in;
 }
@@ -1512,7 +1537,7 @@ body {
 .box {
   width: 150px;
   height: 150px;
-  background-color: #58DAFBb2;
+  background-color: #58DAFB;
   -webkit-animation-name: box-animation;
           animation-name: box-animation;
   -webkit-animation-iteration-count: 10;
@@ -1825,11 +1850,15 @@ a .nav--item {
 }
 
 .pulse__animation {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: -1;
+  overflow: hidden;
+  -webkit-filter: blur(0.3rem);
+          filter: blur(0.3rem);
 }
 
 .circle {
@@ -1852,6 +1881,7 @@ a .nav--item {
           animation-delay: 0;
   -webkit-transform-origin: center;
           transform-origin: center;
+  will-change: auto;
   opacity: 0;
 }
 
@@ -1875,6 +1905,7 @@ a .nav--item {
           animation-delay: 1s;
   -webkit-transform-origin: center;
           transform-origin: center;
+  will-change: auto;
   opacity: 0;
 }
 
@@ -1898,6 +1929,7 @@ a .nav--item {
           animation-delay: 1.5s;
   -webkit-transform-origin: center;
           transform-origin: center;
+  will-change: auto;
   opacity: 0;
 }
 
@@ -1921,6 +1953,7 @@ a .nav--item {
           animation-delay: 2s;
   -webkit-transform-origin: center;
           transform-origin: center;
+  will-change: auto;
   opacity: 0;
 }
 
@@ -1948,6 +1981,7 @@ a .nav--item {
           transform-origin: center;
   -webkit-animation-delay: 8s;
           animation-delay: 8s;
+  will-change: auto;
   opacity: 0;
   z-index: 3;
 }
@@ -1976,6 +2010,7 @@ a .nav--item {
           transform-origin: center;
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
+  will-change: auto;
   opacity: 0;
   z-index: 3;
 }
@@ -2004,6 +2039,7 @@ a .nav--item {
           transform-origin: center;
   -webkit-animation-delay: 11s;
           animation-delay: 11s;
+  will-change: auto;
   opacity: 0;
   z-index: 3;
 }

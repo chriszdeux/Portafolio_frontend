@@ -57,8 +57,10 @@ export const Header = () => {
           <ul className="menu__list">
           {
             menuList.map(({section, route}) => (
-              <NavLink exact to={ route } activeClassName="active__navigation" >
-                <li className="menu--item c10" >{ section }</li>
+              <NavLink key={ route } exact to={ route } activeClassName="active__navigation" >
+                <li className="menu--item">
+                  { section }
+                </li>
               </NavLink>
             ))
           }
@@ -95,8 +97,8 @@ export const Header = () => {
               <ul className="navbar__list">
                 {
                   menuList.map(({section, route}) => (
-                    <NavLink exact to={ route } activeClassName="active__navigation">
-                      <li className="navbar--item c10" onClick={ handleClose }>{ section }</li>
+                    <NavLink key={ route } exact to={ route } activeClassName="active__navigation">
+                      <li  className="navbar--item c10" onClick={ handleClose }>{ section }</li>
                     </NavLink>
                   ))
                 }

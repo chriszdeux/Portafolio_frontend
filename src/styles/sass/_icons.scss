@@ -32,13 +32,16 @@
   @include icons($font-color);
 }
 .github--icon {
-  @include icons($font-color-active);
+  @include icons($github-color);
 }
 .react--icon {
   @include icons($react-color);
 }
 .sass--icon {
   @include icons($sass-color);
+}
+.css--icon {
+  @include icons($css-color);
 }
 .html--icon {
   @include icons($html-color);

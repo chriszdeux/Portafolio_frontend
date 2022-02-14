@@ -14,6 +14,7 @@
   animation-duration: 15s;
   animation-delay: $delay;
   transform-origin: center;
+  will-change: auto;
   opacity: 0;
 }
 
@@ -35,16 +36,23 @@
   animation-delay: 7s;
   transform-origin: center;
   animation-delay: $delay;
+  will-change: auto;
   opacity: 0;
   z-index: 3;
 }
 
 .pulse__animation {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: -1;
+  overflow: hidden;
+  filter: blur(.3rem)
+  // overflow: hidden
+
+  // overflow: hidden;
 }
 
 // .square {

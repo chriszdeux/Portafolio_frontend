@@ -11,8 +11,10 @@ ul, li, ol {
 html {
   font-size: 62.5%;
   font-family: $main-font;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
