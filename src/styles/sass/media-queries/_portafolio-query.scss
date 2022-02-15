@@ -33,6 +33,9 @@
 }
 
 @media only screen and ( min-width: 1366px ) {
+  .portafolio__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .project__image {
     height: 40rem;
   }
@@ -40,9 +43,7 @@
 
 
 @media only screen and ( min-width: 1688px ) {
-  .portafolio__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
   .modal__project {
     width: 70%;
     height: 50vh;

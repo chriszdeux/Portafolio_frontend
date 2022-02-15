@@ -3,16 +3,18 @@
 }
 
 .btn {
-  width: 10rem;
+  width: 20rem;
   height: 5rem;
+  padding: 1rem;
   margin: 0 1rem;
   text-align: center;
   outline: none;
   border: none;
   box-shadow: $box-shadow;
-  // background-color: $backgorund-color;
+  background-color: $other-color;
   color: $font-color;
   transition: .3s ease;
+  color: $font-color-active;
 }
 
 .btn:hover {

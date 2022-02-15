@@ -9,6 +9,7 @@ import { DataContext } from './context/dataContext';
 import './styles/styles.css';
 export const Portafolio = () => {
   const [animation, setAnimation] = useState(animationEffect)
+  const [handleProject, setHandleProject] = useState({})
   // useEffect(() => {
   //   setAnimation(animationEffect)
   // }, [])
@@ -16,7 +17,8 @@ export const Portafolio = () => {
   return (
     <>
     <DataContext.Provider value={{
-      animation
+      animation,
+      handleProject, setHandleProject
     }}>
       <AppRouter />
     </DataContext.Provider>

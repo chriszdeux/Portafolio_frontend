@@ -1,6 +1,8 @@
-@mixin icons($color) {
-  font-size: $extra-large-font-size;
-  color: $color;
+@mixin icons() {
+  font-size: $small-icon;
+  color: inherit;
+  // font-size: 5rem;
+  // color: $color;
 }
 
 @mixin slider-controls {
@@ -10,58 +12,93 @@
 }
 
 .menu--icon {
-  @include icons($font-color-active)
+  font-size: $extra-large-font-size;
+  color: $background-color;
 }
 
 .close--icon {
-  @include icons($font-color-active);
+  font-size: $extra-large-font-size;
+  color: $background-color;
   z-index: 2;
+  position: fixed;
+  right: 5%;
 }
-.folder--icon {
-  @include icons($font-color);
-  transition: ease .3s;
+// .folder--icon {
+//   @include icons($font-color);
+//   transition: ease .3s;
+// }
+
+.icon {
+  @include icons();
+
 }
 
-.folder--icon:active {
-  transform: scale(1.2)
+.icon--link {
+  cursor: pointer;
+  .icon {
+    @include icons();
+    transition: ease .2s;
+    &:hover {
+      color: $hover-color;
+    }
+    &:active {
+      transform: scale(.95);
+    }
+  }
+  
 }
-.link--icon {
-  @include icons($font-color);
-}
-.live--icon {
-  @include icons($font-color);
-}
-.github--icon {
-  @include icons($github-color);
-}
-.react--icon {
-  @include icons($react-color);
-}
-.sass--icon {
-  @include icons($sass-color);
-}
-.css--icon {
-  @include icons($css-color);
-}
-.html--icon {
-  @include icons($html-color);
-}
+// .folder--icon:active {
+//   transform: scale(1.2)
+// }
+// .link--icon {
+//   @include icons($font-color);
+// }
+// .live {
+//   @include icons($font-color);
+// }
+// .git {
+//   @include icons($html-color);
+// }
+// .github {
+//   @include icons($github-color);
+// }
+// .react {
+//   @include icons($react-color);
+// }
+// .sass {
+//   @include icons($sass-color);
+// }
+// .css {
+//   @include icons($css-color);
+// }
+// .html {
+//   @include icons($html-color);
+// }
+// .redux {
+//   @include icons($redux-color);
+// }
 
-.js--icon {
-  @include icons($js-color);
-}
+// .javascript {
+//   @include icons($js-color);
+// }
+// .npm {
+//   @include icons($npm-color);
+// }
+// .debbug {
+//   @include icons($debbug-color);
+// }
 
-.left--icon {
-  @include slider-controls();
-}
+// .left--icon {
+//   @include slider-controls();
+// }
 
-.right--icon {
-  @include slider-controls();
-}
+// .right--icon {
+//   @include slider-controls();
+// }
 
-.lg--icon {
-  font-size: $regular-icon;
-}
-.jb--icon {
-  font-size: $large-icon;
-}
+// .lg--icon {
+//   font-size: $regular-icon;
+// }
+// .jb--icon {
+//   font-size: $large-icon;
+// }

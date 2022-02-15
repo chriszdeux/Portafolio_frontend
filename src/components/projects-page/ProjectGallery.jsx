@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { DataContext } from '../../context/dataContext'
 import { GalleryScreenshot } from './GalleryScreenshot'
 
 export const ProjectGallery = () => {
+  const { handleProject: {
+    gallery
+  } } = useContext(DataContext)
   return (
     <div className="project__gallery c10">
-      <GalleryScreenshot />
-      <GalleryScreenshot />
-      <GalleryScreenshot />
-      <GalleryScreenshot />
-      <GalleryScreenshot />
+      {
+        gallery.map(({image}) => (
+          <GalleryScreenshot key={ image } image={ image }/>
+        ))
+      }
     </div>
   )
 }
