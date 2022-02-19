@@ -10,27 +10,17 @@ const menuList = [
   {
     section: 'My Projects',
     class_name: 'projects__section',
-    route: '/project-page'
+    route: '/projects'
   },
   {
     section: 'About Me',
     class_name: 'about__section',
-    route: '/about-me-page'
+    route: '/about'
   },
   {
     section: 'My skills',
     class_name: 'knowledge__section',
-    route: '/skills-page'
-  },
-  {
-    section: 'Hobbies',
-    class_name: 'i__like__section',
-    route: '/hobbies-page'
-  },
-  {
-    section: 'Contact',
-    class_name: 'contact__section',
-    route: '/contact-page'
+    route: '/skills'
   },
 ]
 export const Menu = () => {
@@ -44,6 +34,7 @@ export const Menu = () => {
             </NavLink>
           ))
         }
+        
           {/* <li className="nav--item">Projects</li>
           <li className="nav--item">Skills</li>
           <li className="nav--item">About Me</li>

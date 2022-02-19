@@ -14,6 +14,7 @@ export const Portafolio = () => {
   //   setAnimation(animationEffect)
   // }, [])
   // debugger
+  
   return (
     <>
     <DataContext.Provider value={{

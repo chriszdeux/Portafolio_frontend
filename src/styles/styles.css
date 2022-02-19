@@ -298,7 +298,7 @@ body {
           box-shadow: 0 0 3px 3px #33333347;
   top: 0;
   z-index: 1;
-  background-color: #3333335d;
+  background-color: #0000005b;
 }
 
 .modal .close--icon {
@@ -469,6 +469,56 @@ body {
   -ms-grid-column-span: 2;
   grid-area: hero;
   background-color: #fffffff3;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__area:hover > .section__background {
+  -webkit-filter: grayscale(0) blur(0);
+          filter: grayscale(0) blur(0);
+}
+
+.hero__area a {
+  width: 50%;
+  z-index: 2;
+}
+
+.hero__area a .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #363636fa;
+  height: 5rem;
+  border-radius: .5rem;
+}
+
+.hero__area .section__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-filter: grayscale(1) blur(1px);
+          filter: grayscale(1) blur(1px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.hero__area .section__background img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects__area {
@@ -479,51 +529,298 @@ body {
   -ms-grid-column-span: 2;
   grid-area: projects;
   background-color: #fffffff3;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__area:hover > .section__background {
+  -webkit-filter: grayscale(0) blur(0);
+          filter: grayscale(0) blur(0);
+}
+
+.projects__area a {
+  width: 50%;
+  z-index: 2;
+}
+
+.projects__area a .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #363636fa;
+  height: 5rem;
+  border-radius: .5rem;
+}
+
+.projects__area .section__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-filter: grayscale(1) blur(1px);
+          filter: grayscale(1) blur(1px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.projects__area .section__background img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about__area {
   -webkit-box-shadow: 0 0 3px 3px #33333347;
           box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 4;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: about;
   background-color: #fffffff3;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__area:hover > .section__background {
+  -webkit-filter: grayscale(0) blur(0);
+          filter: grayscale(0) blur(0);
+}
+
+.about__area a {
+  width: 50%;
+  z-index: 2;
+}
+
+.about__area a .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #363636fa;
+  height: 5rem;
+  border-radius: .5rem;
+}
+
+.about__area .section__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-filter: grayscale(1) blur(1px);
+          filter: grayscale(1) blur(1px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.about__area .section__background img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .skills__area {
   -webkit-box-shadow: 0 0 3px 3px #33333347;
           box-shadow: 0 0 3px 3px #33333347;
   -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
   grid-area: skills;
   background-color: #fffffff3;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills__area:hover > .section__background {
+  -webkit-filter: grayscale(0) blur(0);
+          filter: grayscale(0) blur(0);
+}
+
+.skills__area a {
+  width: 50%;
+  z-index: 2;
+}
+
+.skills__area a .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #363636fa;
+  height: 5rem;
+  border-radius: .5rem;
+}
+
+.skills__area .section__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-filter: grayscale(1) blur(1px);
+          filter: grayscale(1) blur(1px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.skills__area .section__background img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hobbies__area {
   -webkit-box-shadow: 0 0 3px 3px #33333347;
           box-shadow: 0 0 3px 3px #33333347;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
   grid-area: hobbies;
   background-color: #fffffff3;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hobbies__area:hover > .section__background {
+  -webkit-filter: grayscale(0) blur(0);
+          filter: grayscale(0) blur(0);
+}
+
+.hobbies__area a {
+  width: 50%;
+  z-index: 2;
+}
+
+.hobbies__area a .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #363636fa;
+  height: 5rem;
+  border-radius: .5rem;
+}
+
+.hobbies__area .section__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-filter: grayscale(1) blur(1px);
+          filter: grayscale(1) blur(1px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.hobbies__area .section__background img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact__area {
   -webkit-box-shadow: 0 0 3px 3px #33333347;
           box-shadow: 0 0 3px 3px #33333347;
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
   grid-area: contact;
   background-color: #fffffff3;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__area:hover > .section__background {
+  -webkit-filter: grayscale(0) blur(0);
+          filter: grayscale(0) blur(0);
+}
+
+.contact__area a {
+  width: 50%;
+  z-index: 2;
+}
+
+.contact__area a .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #363636fa;
+  height: 5rem;
+  border-radius: .5rem;
+}
+
+.contact__area .section__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -webkit-filter: grayscale(1) blur(1px);
+          filter: grayscale(1) blur(1px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.contact__area .section__background img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main {
   display: -ms-grid;
   display: grid;
   height: 93vh;
-      grid-template-areas: 'hero hero' 'hero hero' 'projects projects' 'about skills' 'about hobbies' 'contact hobbies';
+      grid-template-areas: "hero hero" "hero hero" "projects projects" "skills about" "skills contact";
   gap: 2rem;
   text-align: center;
   padding: 1rem;
@@ -539,15 +836,58 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   color: #363636fa;
+  overflow: hidden;
 }
 
-.titles {
-  margin: 1rem 0;
+.main__sections .i__am {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: start;
+  z-index: 2;
+}
+
+.main__sections .i__am h1 {
+  font-size: 3rem;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.main__sections .i__am h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.2rem;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.main__sections .i__am h2 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  color: #58DAFB;
+}
+
+.main__sections .i__am h2 span .icon {
+  margin-left: 1rem;
+}
+
+.main__sections .i__am p {
   font-size: 2rem;
-  color: #363636fa;
+  color: #f0f0f0;
+  margin-bottom: 1rem;
 }
 
 .info__section {
@@ -691,19 +1031,119 @@ body {
   margin-right: 1rem;
 }
 
-.projects .project__info .projects__links {
+.projects .projects__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 1rem;
 }
 
-.projects .project__info .projects__links li {
+.projects .projects__links li {
   margin-right: 1rem;
 }
 
 .projects .project__description p {
   font-size: 1.8rem;
   padding: 1rem;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.gallery .close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 1;
+}
+
+.gallery .close .icon {
+  font-size: 5rem;
+  color: #f0f0f0;
+}
+
+.gallery .gallery--layout {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0000005b;
+  z-index: -1;
+}
+
+.gallery .screenshot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 80vh;
+}
+
+.gallery .screenshot img {
+  width: 80%;
+}
+
+.gallery .prev {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.gallery .prev:active {
+  -webkit-transform: scale(0.95) translateY(-50%);
+          transform: scale(0.95) translateY(-50%);
+}
+
+.gallery .prev .icon {
+  font-size: 5rem;
+  color: #f0f0f0;
+}
+
+.gallery .next {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.gallery .next:active {
+  -webkit-transform: scale(0.95) translateY(-50%);
+          transform: scale(0.95) translateY(-50%);
+}
+
+.gallery .next .icon {
+  font-size: 5rem;
+  color: #f0f0f0;
 }
 
 .about__me__page {
@@ -1038,9 +1478,12 @@ body {
   margin: 5rem 0;
 }
 
-@media only screen and (min-width: 1024px) {
+/* autoprefixer: ignore next warning */
+@media only screen and (min-width: 1600px) {
   .main {
-        grid-template-areas: "hero hero projects" "hero hero skills" "hobbies about contact";
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "hero hero projects projects" "hero hero projects projects" "skills about about contact";
   }
 }
 
@@ -1970,5 +2413,16 @@ a .nav--item {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, rgba(255, 255, 255, 0)), to(black));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 13%, black 100%);
+}
+
+.fade--left {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(36%, rgba(0, 0, 0, 0.196516)), color-stop(53%, rgba(0, 0, 0, 0.868785)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.196516) 36%, rgba(0, 0, 0, 0.868785) 53%);
+  z-index: 1;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -15,27 +15,22 @@ const menuList = [
   {
     section: 'My Projects',
     class_name: 'projects__section',
-    route: '/project-page'
+    route: '/projects'
   },
   {
     section: 'My skills',
     class_name: 'knowledge__section',
-    route: '/skills-page'
+    route: '/skills'
   },
   {
     section: 'About Me',
     class_name: 'about__section',
-    route: '/about-me-page'
-  },
-  {
-    section: 'Hobbies',
-    class_name: 'i__like__section',
-    route: '/hobbies-page'
+    route: '/about'
   },
   {
     section: 'Contact',
     class_name: 'contact__section',
-    route: '/contact-page'
+    // route: '/contact'
   },
 ]
 export const Header = () => {
@@ -55,15 +50,33 @@ export const Header = () => {
           <h2 className="sub--title">Portafolio</h2>
           <nav className="desk__menu c10">
           <ul className="menu__list">
-          {
-            menuList.map(({section, route}) => (
-              <NavLink key={ route } exact to={ route } activeClassName="active__navigation" >
-                <li className="menu--item">
-                  { section }
-                </li>
-              </NavLink>
+              <li className="menu--item ">
+                <NavLink exact to="/" activeClassName="active__navigation" >
+                    Home
+                </NavLink>
+              </li>
+              <li className="menu--item ">
+                <NavLink exact to="/projects" activeClassName="active__navigation" >
+                    Projects
+                </NavLink>
+              </li>
+              <li className="menu--item ">
+                <NavLink exact to="/skills" activeClassName="active__navigation" >
+                    Skills
+                </NavLink>
+              </li>
+              <li className="menu--item ">
+                <NavLink exact to="/About" activeClassName="active__navigation" >
+                    About Me
+                </NavLink>
+              </li>
+              <li className="menu--item ">
+                Contact
+              </li>
+          {/* {
+            menuList.map(item => (
             ))
-          }
+          } */}
           </ul>
 
         </nav>
@@ -95,13 +108,29 @@ export const Header = () => {
           <div className="navbar__modal animate__animated animate__fadeInRight" style={{ animationDelay: '.3s' }} >
             <nav className="navbar c9">
               <ul className="navbar__list">
-                {
-                  menuList.map(({section, route}) => (
-                    <NavLink key={ route } exact to={ route } activeClassName="active__navigation">
-                      <li  className="navbar--item c10" onClick={ handleClose }>{ section }</li>
-                    </NavLink>
-                  ))
-                }
+                <li className="navbar--item ">
+                  <NavLink exact to="/" activeClassName="active__navigation" >
+                      Home
+                  </NavLink>
+                </li>
+                <li className="navbar--item ">
+                  <NavLink exact to="/projects" activeClassName="active__navigation" >
+                      Projects
+                  </NavLink>
+                </li>
+                <li className="navbar--item ">
+                  <NavLink exact to="/skills" activeClassName="active__navigation" >
+                      Skills
+                  </NavLink>
+                </li>
+                <li className="navbar--item ">
+                  <NavLink exact to="/About" activeClassName="active__navigation" >
+                      About Me
+                  </NavLink>
+                </li>
+                <li className="navbar--item ">
+                  Contact
+                </li>
               </ul>
             </nav>
             {/* <CircleBackground /> */}

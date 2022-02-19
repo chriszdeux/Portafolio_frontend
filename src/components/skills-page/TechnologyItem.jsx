@@ -7,13 +7,14 @@ import { TechnologyInfo } from './TechnologyInfo';
 export const TechnologyItem = ({ item }) => {
   const { openContent, handleOpenContent, data } = useOpenContent();
   // const { handleOpenContent, item } = values;
-  const { icon, name, description, url } = item
+  const { icon, name, description, url, color } = item
   return (
   <>  
-    <div className="skill__item" onClick={ handleOpenContent }>
-      {
-        icon
-      }
+    <div className="skill__item" >
+    {/* <div className="skill__item" onClick={ handleOpenContent }> */}
+      <div className='skill--icon' style={{ color:`${ color }` }}>
+        { icon }
+      </div>
       <h3 className="technology--name" >{ name }</h3>
     </div>
 

@@ -13,13 +13,11 @@ export const HobbiesPage = () => {
     <section className="hobbies__section c9 animate__animated animate__fadeIn">
       <h2 className="titles">Hobbies</h2>
       <Hobbie handleOpenContent={ handleOpenContent } />
-      <Hobbie handleOpenContent={ handleOpenContent } />
-      <Hobbie handleOpenContent={ handleOpenContent } />
 
-      {
+      {/* {
         openContent && <HobbieGallery handleOpenContent={ handleOpenContent }/>
           
-      }
+      } */}
     </section>
   )
 }

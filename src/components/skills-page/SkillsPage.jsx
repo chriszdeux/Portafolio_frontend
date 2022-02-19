@@ -14,7 +14,7 @@ export const SkillPage = () => {
   return (
     <section className="skills c10">
       <div className="c9 animate__animated animate__fadeIn">
-        <h2 className="skills__title">What I know?</h2>
+        <h2 className="skills__title">My Skills</h2>
         <div className="skills__grid c10" >
           <>
           {

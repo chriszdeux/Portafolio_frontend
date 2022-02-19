@@ -2,6 +2,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { DataContext } from '../../context/dataContext'
 import { BackgroundAnimation } from '../animations/BackgroundAnimation'
+import { FadeLeft } from '../fade/FadeLeft'
+import { About } from './About'
+import { Contact } from './Contact'
+import { Hero } from './Hero'
+import { Projects } from './Projects'
+import { Skills } from './Skills'
 
 export const gridTemplate = [
   {
@@ -33,13 +39,6 @@ export const gridTemplate = [
     delay: '1.2s',
   },
   {
-    section: 'Hobbies',
-    area: 'hobbies__area',
-    route: '/hobbies-page',
-    animation: 'hobbies--animation',
-    delay: '1.6s',
-  },
-  {
     section: 'Contact',
     area: 'contact__area',
     route: '/contact-page',
@@ -67,7 +66,13 @@ export const MainPage = () => {
   return (
     <>
     <main className="main c9 hero--animation">
-      {
+      {/* <FadeLeft /> */}
+      <Hero />
+      <Projects />
+      <Skills />
+      <About />
+      <Contact />
+      {/* {
         gridTemplate.map(({section, area, route, animation, delay} ) => (
           <div key={ area } className={`main__sections ${area} animation__animated animation__fadeIn`} style={{ animationDelay: '1s' }}>
             <NavLink exact to={ route }>
@@ -84,7 +89,7 @@ export const MainPage = () => {
           </div>
 
 ))
-}
+} */}
     </main>
       {/* <BackgroundAnimation /> */}
     </>

@@ -19,11 +19,11 @@ export const AppRouter = () => {
       <Header />
       <Switch>
         <Route exact path='/' component={ MainPage }/>
-        <Route exact path='/project-page'  component={ ProjectPage }/>
-        <Route exact path='/about-me-page' component={ AboutMePage }/>
-        <Route exact path='/skills-page' component={ SkillPage }/>
-        <Route exact path='/hobbies-page' component={ HobbiesPage }/>
-        <Route exact path='/contact-page' component={ ContactPage }/>
+        <Route exact path='/projects'  component={ ProjectPage }/>
+        <Route exact path='/about' component={ AboutMePage }/>
+        <Route exact path='/skills' component={ SkillPage }/>
+        {/* <Route exact path='/hobbies' component={ HobbiesPage }/> */}
+        <Route exact path='/contact' component={ ContactPage }/>
       </Switch>
       {/* <section className="animation">
         <div className="box1"></div>

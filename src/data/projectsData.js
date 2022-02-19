@@ -11,7 +11,7 @@ export const projects = [
   {
     id: 1,
     name: 'Crypto Ant',
-    main_image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/crypto%2Fcryptoant.png?alt=media&token=217d9a7b-f05d-41fd-b92f-d87ef17bdf2b',
+    cover_image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/crypto%2Fcryptoant.png?alt=media&token=217d9a7b-f05d-41fd-b92f-d87ef17bdf2b',
     link: 'https://chriszdeux.github.io/crypto/',
     technologies: [
       {
@@ -59,7 +59,7 @@ export const projects = [
   {
     id: 2,
     name: 'WhatGame',
-    main_image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/whatgame%2Fwgame.png?alt=media&token=1ca33c4c-b845-44d7-8c4d-e6cb852ad04a',
+    cover_image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/whatgame%2Fwgame.png?alt=media&token=1ca33c4c-b845-44d7-8c4d-e6cb852ad04a',
     link: 'https://chriszdeux.github.io/whatgame/',
     technologies: [
       {
@@ -99,7 +99,8 @@ export const projects = [
   {
     id: 3,
     name: 'AweMage',
-    main_image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/awamage%2Fawemage.png?alt=media&token=2231daa9-8fdf-43c8-8919-5a5d39c735e4',
+    cover_image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/awamage%2Fawemage.png?alt=media&token=2231daa9-8fdf-43c8-8919-5a5d39c735e4',
+    link: 'https://chriszdeux.github.io/gallery/',
     technologies: [
       {
         name: 'HTML',
@@ -132,7 +133,7 @@ export const projects = [
         image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/awamage%2Fchriszdeux.github.io_gallery_(iPhone%206_7_8%20Plus).png?alt=media&token=a6cb178a-8d5a-4e71-b5ab-8b4683e91660'
       },
       {
-        image: 'https://console.firebase.google.com/u/0/project/proyects-screenshots/storage/proyects-screenshots.appspot.com/files/~2Fawamage?hl=es-419'
+        image: 'https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/awamage%2Fchriszdeux.github.io_gallery_.png?alt=media&token=00258c73-d6d9-4666-a5de-141f615ffd64'
       },
     ],
     repository: 'https://github.com/chriszdeux/gallery'

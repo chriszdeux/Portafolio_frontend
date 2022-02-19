@@ -2,8 +2,9 @@ import { SiHtml5  , SiCss3  , SiJavascript  , SiSass  , SiReact , SiGithub, SiRe
 import { DiGit, DiNpm } from 'react-icons/di'
 import { AiFillEye, AiOutlineGooglePlus } from 'react-icons/ai'
 import { RiExternalLinkFill, RiFolderInfoFill } from 'react-icons/ri' 
-import { VscDebugConsole } from 'react-icons/vsc';
-
+import { VscDebugConsole, VscChromeClose } from 'react-icons/vsc';
+import { CgArrowLeftR, CgArrowRightR } from 'react-icons/cg';
+import { IoChevronBackOutline, IoChevronForwardOutline } from 'react-icons/io5'
 
 export const icons = {
   html_icon: <SiHtml5 className='icon'/>,
@@ -20,4 +21,7 @@ export const icons = {
   folder_icon: <RiFolderInfoFill className='icon'/>,
   debbug_icon: <VscDebugConsole className='icon'/>,
   google_icon: <AiOutlineGooglePlus className='icon'/>,
+  close_icon: <VscChromeClose className='icon'/>,
+  left_icon: <IoChevronBackOutline className='icon'/>,
+  right_icon: <IoChevronForwardOutline className='icon'/>,
 }
