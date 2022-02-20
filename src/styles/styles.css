@@ -1483,7 +1483,7 @@ body {
   .main {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "hero hero projects projects" "hero hero projects projects" "skills about about contact";
+        grid-template-areas: "hero hero projects projects" "hero hero projects projects" "skills skills about contact";
   }
 }
 
