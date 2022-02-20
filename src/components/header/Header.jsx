@@ -5,6 +5,8 @@ import { VscChromeClose as CloseIcon } from 'react-icons/vsc';
 import { DataContext } from '../../context/dataContext';
 import { Menu } from './Menu'
 import { CircleBackground } from '../animations/CircleBackground';
+import { MenuModal } from './MenuModal';
+import { DeskMenu } from './DeskMenu';
 
 const menuList = [
   {
@@ -48,38 +50,7 @@ export const Header = () => {
       <header className="header c10">
         <div className="c9">
           <h2 className="sub--title">Portafolio</h2>
-          <nav className="desk__menu c10">
-          <ul className="menu__list">
-              <li className="menu--item ">
-                <NavLink exact to="/" activeClassName="active__navigation" >
-                    Home
-                </NavLink>
-              </li>
-              <li className="menu--item ">
-                <NavLink exact to="/projects" activeClassName="active__navigation" >
-                    Projects
-                </NavLink>
-              </li>
-              <li className="menu--item ">
-                <NavLink exact to="/skills" activeClassName="active__navigation" >
-                    Skills
-                </NavLink>
-              </li>
-              <li className="menu--item ">
-                <NavLink exact to="/About" activeClassName="active__navigation" >
-                    About Me
-                </NavLink>
-              </li>
-              <li className="menu--item ">
-                Contact
-              </li>
-          {/* {
-            menuList.map(item => (
-            ))
-          } */}
-          </ul>
-
-        </nav>
+          <DeskMenu />
           {
             !open 
             ? 
@@ -101,41 +72,7 @@ export const Header = () => {
         open && 
 
         // <Menu />
-        <div className="modal">
-          
-          <div className="layout animate__animated animate__fadeInRight" onClick={ () => setOpen(false) }>
-          </div>
-          <div className="navbar__modal animate__animated animate__fadeInRight" style={{ animationDelay: '.3s' }} >
-            <nav className="navbar c9">
-              <ul className="navbar__list">
-                <li className="navbar--item ">
-                  <NavLink exact to="/" activeClassName="active__navigation" >
-                      Home
-                  </NavLink>
-                </li>
-                <li className="navbar--item ">
-                  <NavLink exact to="/projects" activeClassName="active__navigation" >
-                      Projects
-                  </NavLink>
-                </li>
-                <li className="navbar--item ">
-                  <NavLink exact to="/skills" activeClassName="active__navigation" >
-                      Skills
-                  </NavLink>
-                </li>
-                <li className="navbar--item ">
-                  <NavLink exact to="/About" activeClassName="active__navigation" >
-                      About Me
-                  </NavLink>
-                </li>
-                <li className="navbar--item ">
-                  Contact
-                </li>
-              </ul>
-            </nav>
-            {/* <CircleBackground /> */}
-          </div>
-        </div>
+        <MenuModal setOpen={ setOpen }/>
       }
 
       {/* <section className="desk__menu">

@@ -298,7 +298,7 @@ body {
           box-shadow: 0 0 3px 3px #33333347;
   top: 0;
   z-index: 1;
-  background-color: #0000005b;
+  background-color: #222222d0;
 }
 
 .modal .close--icon {
@@ -357,6 +357,14 @@ body {
   color: #f0f0f0;
   -webkit-transition: .6s ease;
   transition: .6s ease;
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.navbar--item:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .navbar--item:hover {
@@ -458,6 +466,14 @@ body {
   font-size: 1.8rem;
   margin-right: 2rem;
   color: #f0f0f0;
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.desk__menu .menu__list .menu--item:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .hero__area {
@@ -841,6 +857,15 @@ body {
   transition: .5s ease;
   color: #363636fa;
   overflow: hidden;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+.main__sections:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  outline: 1px solid #58DAFB;
 }
 
 .main__sections .i__am {
@@ -1086,7 +1111,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0000005b;
+  background-color: #222222d0;
   z-index: -1;
 }
 
@@ -1405,11 +1430,11 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: name;
-  height: 3rem;
+  height: 5rem;
   text-align: center;
   padding: 1rem;
   border: 1px solid #333333;
-  color: #f0f0f0;
+  color: #363636fa;
   outline: none;
 }
 
@@ -1418,11 +1443,11 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: email;
-  height: 3rem;
+  height: 5rem;
   text-align: center;
   padding: 1rem;
   border: 1px solid #333333;
-  color: #f0f0f0;
+  color: #363636fa;
   outline: none;
 }
 
@@ -1431,11 +1456,11 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: phone;
-  height: 3rem;
+  height: 5rem;
   text-align: center;
   padding: 1rem;
   border: 1px solid #333333;
-  color: #f0f0f0;
+  color: #363636fa;
   outline: none;
 }
 
@@ -1445,11 +1470,11 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: subject;
-  height: 3rem;
+  height: 5rem;
   text-align: center;
   padding: 1rem;
   border: 1px solid #333333;
-  color: #f0f0f0;
+  color: #363636fa;
   outline: none;
 }
 
@@ -1459,14 +1484,64 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: message;
-  height: 3rem;
+  height: 5rem;
   text-align: center;
   padding: 1rem;
   border: 1px solid #333333;
-  color: #f0f0f0;
+  color: #363636fa;
   outline: none;
   height: 10rem;
   resize: none;
+}
+
+.contact__modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  height: 100vh;
+  background-color: #222222d0;
+}
+
+.contact__modal .close {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.contact__modal .close .icon {
+  font-size: 3rem;
+  color: #f0f0f0;
+  -webkit-transition: .1s ease;
+  transition: .1s ease;
+}
+
+.contact__modal .close .icon:active {
+  color: #58DAFB;
+}
+
+.contact__modal .btn {
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.contact__modal .btn:hover {
+  border: 1px solid #58DAFB;
 }
 
 .contact__form {
@@ -1474,7 +1549,7 @@ body {
   display: grid;
   position: relative;
       grid-template-areas: "name name" "email phone" "subject subject" "message message";
-  gap: 1rem;
+  gap: 2rem;
   margin: 5rem 0;
 }
 
@@ -1625,9 +1700,25 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .name--field, .email--field, .phone--field, .subject--field, .message--field {
+  .name--field, .email--field, .phone--field, .subject--field {
     font-size: 2rem;
     height: 6rem;
+  }
+  .message--field {
+    font-size: 2rem;
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .contact__modal {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .contact__modal {
+    width: 20%;
   }
 }
 

@@ -23,7 +23,6 @@
   display: none;
   justify-content: flex-end;
   align-items: center;
-
   // a {
   //   text-decoration: none;
   // }
@@ -36,7 +35,11 @@
       font-size: $regular-font-size;
       margin-right: 2rem;
       color: $font-color-active;
-      
+      cursor: pointer;
+      transition: .2s ease;
+      &:active {
+        transform: scale(.98);
+      }
       a {
 
       }

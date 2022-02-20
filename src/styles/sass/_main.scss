@@ -111,7 +111,12 @@
   transition: .5s ease;
   color: $font-color;
   overflow: hidden;
-
+  transition: .2s ease;
+  cursor: pointer;
+  &:active {
+    transform: scale(.95);
+    outline: 1px solid $react-color;
+  }
   .i__am {
     // float: left;
     // justify-content: center;
@@ -154,14 +159,7 @@
 
 }
 
-.main__sections:hover {
-  // border: 1px solid $border-color;
-}
 
-.main__sections:active {
-  // box-shadow: $box-shadow-active;
-  // transform: scale(1.05);
-}
 
 
 .info__section {
