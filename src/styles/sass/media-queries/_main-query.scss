@@ -1,4 +1,17 @@
 /* autoprefixer: ignore next warning */
+@media only screen and ( min-width: 1024px ) {
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'hero hero hero'
+    'projects projects projects'
+    'skills about contact'
+    // 'contact about about'
+    ;
+  }
+  
+}
+
 @media only screen and ( min-width: 1600px ) {
   .main {
     grid-template-columns: repeat(4, 1fr);

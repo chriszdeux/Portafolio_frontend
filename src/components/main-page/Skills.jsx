@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const image =
-  "https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/portafolio%2Fskills.jpg?alt=media&token=70fc8c5b-543c-4844-acd6-49d65d732975";
+  "https://firebasestorage.googleapis.com/v0/b/proyects-screenshots.appspot.com/o/portafolio%2Fskills.jpg?alt=media&token=ca3f5157-dcea-4750-b124-7e85c184eab9";
 export const Skills = () => {
   return (
     <div

@@ -33,7 +33,7 @@ export const AppRouter = () => {
         <div className="box2"></div>
         <div className="box3"></div>
       </section> */}
-      <CircleBackground />
+      {/* <CircleBackground /> */}
       {
         openContent && 
         <ContactModal handleOpenContent={ handleOpenContent }/>

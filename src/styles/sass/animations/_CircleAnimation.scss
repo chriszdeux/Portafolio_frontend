@@ -6,12 +6,12 @@
   // transform: translateX(-50%);
   width: 50px;
   height: 50px;
-  border: 1px solid $background-color-active;
-  border-radius: 50%;
+  border: 1px solid $react-color;
+  // border-radius: 50%;
   animation-name: pulse-animation;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
-  animation-duration: 15s;
+  animation-duration: 30s;
   animation-delay: $delay;
   transform-origin: center;
   will-change: auto;
@@ -27,12 +27,12 @@
   // transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  border: 1px solid $background-color-active;
-  border-radius: 50%;
+  border: 1px solid $react-color;
+  // border-radius: 50%;
   animation-name: pulse-animation;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
-  animation-duration: 15s;
+  animation-duration: 30s;
   animation-delay: 7s;
   transform-origin: center;
   animation-delay: $delay;
@@ -42,12 +42,27 @@
 }
 
 .pulse__animation {
+
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
+  overflow: hidden;
+  // filter: blur(1rem)
+  // overflow: hidden
+
+  // overflow: hidden;
+}
+.pulse__animation2 {
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
   overflow: hidden;
   filter: blur(.3rem)
   // overflow: hidden
@@ -119,7 +134,7 @@
     opacity: .15;
   }
   100% {
-    transform: scale(20);
+    transform: scale(20) rotate(365deg);
     opacity: 0;
     // border-radius: 0;
     // background-color: $background-color-active;

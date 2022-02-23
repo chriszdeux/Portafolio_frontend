@@ -1,44 +1,113 @@
-.about__me__page {
-  // margin-top: 5rem;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  scroll-behavior: smooth;
+
+.main--titles {
+  font-size: $jumbo-font-size;
+  // color: red;
+}
+
+.titles {
+  font-size: $large-font-size;
+  margin: 1rem 0;
+  // color: red;
 }
 
 .about__me {
-  display: flex;
-  height: 20rem;
+  // display: flex;
+  // height: 20rem;
   position: relative;
-  box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
   margin-bottom: 2rem;
-  .about__me__background {
-    // border: 1px solid red;
-    width: 100%;
+  // padding: 1rem;
+  z-index: -1;
+  .my--name {
     position: absolute;
-    height: inherit;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  
-    .about--me--background {
-      width: 100%;
-      object-fit: cover;
-      height: inherit;
+    bottom: 10%;
+    left: 5%;
+    color: $font-color-active;
+
+    
+    h3 {
+      font-size: $large-font-size;
+      letter-spacing: 3px;
     }
-}
+
+    .paragraph {
+      font-size: $regular-font-size;
+    }
+  }
+
+  
+//   .about__me__background {
+//     // border: 1px solid red;
+//     width: 100%;
+//     position: absolute;
+//     height: inherit;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+  
+//     .about--me--background {
+//       width: 100%;
+//       object-fit: cover;
+//       height: inherit;
+//     }
+// }
 
 }
 
-.about__me__info {
-  display: flex;
-  // justify-content: space-around;
-  align-items: center;
+.about {
+  padding: 1rem;
+  // h2 {
+  //   font-size: $extra-large-font-size;
+  // }
+
+  .paragraph {
+    color: $font-color;
+    // font-size: $regular-font-size;
+  }
 }
+
+.my__skills {
+  font-size: $large-font-size;
+  padding: 1rem;
+  .titles {
+    // font-size: $large-font-size;
+  }
+  .skill__list {
+    
+    .skill--item {
+      display: flex;
+      // flex-direction: column;
+      width: 100%;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      font-weight: $heavy-weight;
+      .sub--skill {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        // margin: 1rem;
+        font-weight: $regular-weight;
+        
+        .sub--skill--item {
+          color: $debbug-color;
+          // margin-right: 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+// .about__me__info {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+// }
 
 .profile__picture {
-  width: 30%;
-  height: 10rem;
+  width: 100%;
+  // height: 10rem;
   margin-right: 2rem;
 
   .profile--picture {
@@ -48,10 +117,10 @@
   }
 }
 
-.about__me__more {
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-  right: 0;
-  // overflow: hidden;
-}
+// .about__me__more {
+//   display: flex;
+//   justify-content: flex-end;
+//   position: absolute;
+//   right: 0;
+//   // overflow: hidden;
+// }

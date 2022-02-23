@@ -1,5 +1,5 @@
 body {
-  background-color: $background-color;
+  background: $background-color;
   color: $font-color;
   // overflow: hidden;
 }
@@ -27,11 +27,13 @@ body {
 }
 
 .paragraph {
-  font-size: 18px;
+  font-size: $large-font-size;
+  // font-weight: $regular-weight;
   text-align: justify;
   line-height: 25px;
   margin: 1rem 0;
-  letter-spacing: 1px;
+
+  // letter-spacing: 1px;
 }
 .animation {
   position: fixed;

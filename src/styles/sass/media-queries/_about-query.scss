@@ -1,19 +1,72 @@
-@media only screen and ( min-width: 667px ) {
+
+@media only screen and ( min-width: 768px ) {
+  
+  .about__me__page {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    display: flex;
+  }
+  
+  .about__me {
+    width: 30%;
+    .my--name {
+      width: 100%;
+      text-align: center;
+      // font-size: $extra-jumbo-font-size;
+      left: 50%;
+      bottom: 30%;
+      transform: translateX(-50%);
+      .main--titles {
+        // text-align: center;
+      }
+    }
+  }
   .profile__picture {
-    width: 20%;
-    height: 15rem;
+    width: inherit;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .things__about__me {
+    width: 70%;
+    // position: fixed;
+    // overflow-y: scroll;
+    box-shadow: -10px 0 15px 6px #00000070;
+    height: 100vh;
   }
 }
 
 @media only screen and ( min-width: 1024px ) {
-  
   .about__me {
-    height: 40rem;
+    width: 30%;
+    position: fixed;
+    left: 0;
+  }
+
+  .things__about__me {
+    width: 70%;
+    position: fixed;
+    right: 0;
   }
   
-  .profile__picture {
-    width: 30%;
-    height: 30rem;
-  }
-}
+  .about {
+    .paragraph {
+      font-size: $extra-large-font-size;
+    }
 
+  }
+  .titles {
+    font-size: $jumbo-font-size;
+  }
+
+  .my__skills {
+    .skill__list {
+
+      .skill--item {
+        font-size: $extra-large-font-size;
+      }
+    }
+  }
+ 
+}

@@ -23,6 +23,7 @@ export const Hero = () => {
       <figure className='section__background'>
         <img src={ image } alt="" />
       </figure>
+      
     </div>
   )
 }

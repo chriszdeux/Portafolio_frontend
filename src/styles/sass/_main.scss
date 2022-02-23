@@ -9,12 +9,12 @@
   text-align: center;
   transition: .3s ease;
   color: $font-color;
-  box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
   border-radius:10px;
 }
 
 @mixin section-area($section) {
-  box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
   grid-area: $section;
   background-color: $background-color;
   position: relative;
@@ -48,7 +48,7 @@
     height: 100%;
     // opacity: .8;
     z-index: 0;
-    filter: grayscale(1) blur(1px);
+    // filter: grayscale(1) blur(1px);
     transition: .5s ease;
     img {
       width: inherit;
@@ -97,7 +97,7 @@
   'skills contact'
   // 'contact hobbies'
   ;
-  gap: 2rem;
+  gap: .3rem;
   text-align: center;
   padding: 1rem;
 }
@@ -106,6 +106,7 @@
   // flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   padding: 1rem;
   // background-color: $background-color;
   transition: .5s ease;

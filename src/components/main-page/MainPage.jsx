@@ -65,7 +65,7 @@ export const MainPage = () => {
   // debugger
   return (
     <>
-    <main className="main c9 hero--animation">
+    <main className="main  hero--animation">
       {/* <FadeLeft /> */}
       <Hero />
       <Projects />

@@ -6,9 +6,10 @@ export const useCarrousel = (data, timer) => {
   const [animation, setAnimation] = useState('')
   // debugger
   const myInterval = timer * 1000
+  
   useEffect(() => {
 
-    setAnimation('animate__animated animate__fadeIn')
+    setAnimation('')
 
     const imageInterval = setInterval(() => {
       // setCurrentImage
@@ -19,13 +20,13 @@ export const useCarrousel = (data, timer) => {
         setAnimation('animate__animated animate__fadeIn')
         setTimeout(() => {
           setAnimation('')
-        }, 2500);
+        }, 1500);
       } else {
         setCurrentPosition( currentPosition + 1 )
         setAnimation('animate__animated animate__fadeIn')
         setTimeout(() => {
           setAnimation('')
-        }, 2500);
+        }, 1500);
         
       } 
       // setCurrentPosition(currentPosition + 1)
