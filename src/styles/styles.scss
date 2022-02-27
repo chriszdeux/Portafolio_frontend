@@ -7,14 +7,14 @@
 @import './sass/modal';
 @import './sass/header';
 @import './sass/main';
-@import './sass/portafolio-page';
+@import './sass/portfolio-page';
 @import './sass/about-me-page';
 @import './sass/skills-page';
 @import './sass//slider.scss';
 @import './sass/contact-page';
 @import './sass/media-queries/main-query';
 @import './sass/media-queries/header-query';
-@import './sass/media-queries/portafolio-query';
+@import './sass/media-queries/portfolio-query';
 @import './sass/media-queries/about-query';
 // @import './sass/media-queries/hobbies-query';
 @import './sass/media-queries/skills-query';
@@ -27,10 +27,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500&display=swap');
 
-body {
-  // padding-bottom: 5rem;
-  height: 100vh;
-}
+
 .bottom--fade {
   position: absolute;
   width: 100%;

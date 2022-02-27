@@ -10,9 +10,9 @@ export const ProjectPage = () => {
   // debugger
   
   return (
-    <section className="portafolio c9">
-      <h2 className="titles">Portafolio</h2>
-      <div className="portafolio__grid c10 fade--in">
+    <section className="portfolio c9">
+      <h2 className="titles">Portfolio</h2>
+      <div className="portfolio__grid c10 fade--in">
         {
           projects.map(item => (
             <ProjectItem key={ item.id } item={ item }  /> 

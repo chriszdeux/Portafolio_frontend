@@ -1,5 +1,5 @@
 @media only screen and ( min-width: 667px ) {
-  .portafolio__grid {
+  .portfolio__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -33,7 +33,7 @@
 }
 
 @media only screen and ( min-width: 1366px ) {
-  .portafolio__grid {
+  .portfolio__grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .project__image {

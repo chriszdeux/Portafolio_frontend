@@ -49,7 +49,7 @@ export const Header = () => {
     <>
       <header className="header c10">
         <div className="c9">
-          <h2 className="sub--title">Portafolio</h2>
+          <h2 className="sub--title">Portfolio</h2>
           <DeskMenu />
           {
             !open 
@@ -82,7 +82,7 @@ export const Header = () => {
             </figure>
             <nav>
               <ul>
-                <li>portafolio</li>
+                <li>Portfolio</li>
                 <li>main</li>
                 <li>about me</li>
                 <li>likes</li>

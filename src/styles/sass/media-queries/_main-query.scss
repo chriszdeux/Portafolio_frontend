@@ -14,6 +14,7 @@
 
 @media only screen and ( min-width: 1600px ) {
   .main {
+    height: 95vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     'hero hero projects projects'

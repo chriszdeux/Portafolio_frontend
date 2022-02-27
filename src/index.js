@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Portafolio } from './Portafolio';
+import { Portfolio } from './Portfolio';
 import "animate.css"
 
 
-ReactDOM.render(<Portafolio />, document.querySelector('#root'));
+ReactDOM.render(<Portfolio />, document.querySelector('#root'));

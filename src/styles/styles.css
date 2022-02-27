@@ -22,7 +22,8 @@ a {
 }
 
 body {
-  background: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background: #fcb69f;
+  background-repeat: no-repeat;
   color: #ecececfa;
 }
 
@@ -177,12 +178,12 @@ body {
 
 .menu--icon {
   font-size: 2.2rem;
-  color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  color: #fcb69f;
 }
 
 .close--icon {
   font-size: 2.2rem;
-  color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  color: #fcb69f;
   z-index: 2;
   position: fixed;
   right: 5%;
@@ -417,7 +418,9 @@ body {
 }
 
 .header {
+  position: fixed;
   top: 0;
+  left: 0;
   height: 5rem;
   background-color: #333333;
   z-index: 1;
@@ -481,7 +484,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: hero;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -537,7 +540,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: projects;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -592,7 +595,7 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: about;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -648,7 +651,7 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: skills;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -701,7 +704,7 @@ body {
 
 .hobbies__area {
   grid-area: hobbies;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -756,7 +759,7 @@ body {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: contact;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -810,7 +813,8 @@ body {
 .main {
   display: -ms-grid;
   display: grid;
-  height: 93vh;
+  height: 100vh;
+  margin-top: 5rem;
       grid-template-areas: "hero hero" "hero hero" "projects projects" "skills about" "skills contact";
   gap: .3rem;
   text-align: center;
@@ -919,12 +923,13 @@ body {
   margin-right: 1rem;
 }
 
-.portafolio {
+.portfolio {
   margin-top: 2rem;
   height: 100vh;
+  overflow-y: scroll;
 }
 
-.portafolio__grid {
+.portfolio__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -947,7 +952,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 20rem;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
   -webkit-box-shadow: 0 0 3px 3px #33333347;
           box-shadow: 0 0 3px 3px #33333347;
   -webkit-transition: .3s ease-in;
@@ -1157,6 +1161,14 @@ body {
   margin: 1rem 0;
 }
 
+.about__me__page {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 .about__me {
   position: relative;
   margin-bottom: 2rem;
@@ -1303,7 +1315,7 @@ body {
 }
 
 .skills__modal .github--icon {
-  color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  color: #fcb69f;
 }
 
 .close--skills {
@@ -1574,6 +1586,7 @@ body {
 
 @media only screen and (min-width: 1600px) {
   .main {
+    height: 95vh;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "hero hero projects projects" "hero hero projects projects" "skills skills about contact";
@@ -1598,7 +1611,7 @@ body {
 }
 
 @media only screen and (min-width: 667px) {
-  .portafolio__grid {
+  .portfolio__grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -1631,7 +1644,7 @@ body {
 }
 
 @media only screen and (min-width: 1366px) {
-  .portafolio__grid {
+  .portfolio__grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
@@ -2115,7 +2128,7 @@ body {
   top: 0;
   overflow: hidden;
   z-index: 1;
-  background-color: linear-gradient(180.3deg, #dddddd 5.5%, #6e88a1 90.2%);
+  background-color: #fcb69f;
 }
 
 .nav__list {
@@ -2550,10 +2563,6 @@ a .nav--item {
             transform: scale(20) rotate(365deg);
     opacity: 0;
   }
-}
-
-body {
-  height: 100vh;
 }
 
 .bottom--fade {

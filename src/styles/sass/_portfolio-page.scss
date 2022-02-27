@@ -1,9 +1,10 @@
-.portafolio {
+.portfolio {
   margin-top: 2rem;
   height: 100vh;
+  overflow-y: scroll;
 }
 
-.portafolio__grid {
+.portfolio__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -19,7 +20,7 @@
   // align-items: center;
   min-height: 20rem;
   // margin-top: 3rem;
-  background-color: $background-color;
+  // background-color: $background-color;
   box-shadow: $box-shadow;
   transition: .3s ease-in;
   overflow: hidden;

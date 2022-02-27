@@ -8,7 +8,7 @@ import { animationEffect } from './components/utils/animation';
 import { DataContext } from './context/dataContext';
 
 import './styles/styles.css';
-export const Portafolio = () => {
+export const Portfolio = () => {
   const [animation, setAnimation] = useState(animationEffect)
   const [handleProject, setHandleProject] = useState({})
   const { openContent, handleOpenContent } = useOpenContent()
